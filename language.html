@@ -14,6 +14,7 @@
 
     gtag('config', 'UA-65681611-2');
   </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -47,29 +48,53 @@
   }
 </script>
 
-
 <body>
+  <!-- yelp button -->
+  <script>
+    (function(d, t) {
+      var g = d.createElement(t);
+      var s = d.getElementsByTagName(t)[0];
+      g.id = "yelp-biz-badge-script-plain-2jxw3rEy6X4ABCCE5iz2Mw";
+      g.src = "https://yelp.com/biz_badge_js/en_US/plain/2jxw3rEy6X4ABCCE5iz2Mw.js";
+      s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+  </script>
+
+  <!-- Facebook button -->
+  <!-- <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script> -->
+
+
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
     <h5 class="my-0 mr-md-auto font-weight-normal"><a href="language.html" style="text-decoration:none;color:black;">Bay Area Chinese Language School</a></h5>
     <nav class="my-2 my-md-0 mr-md-3">
       <a class="p-2 text-dark" href="#" onclick="jQuery('html, body').animate({
     scrollTop: $('#pricing').offset().top
     }, 300, function(){ window.location.hash = '#pricing';});">Pricing</a>
-  </nav>
+    </nav>
     <div>
       <a class="btn btn-outline-primary" href="#" onclick="jQuery('html, body').animate({
     scrollTop: $('#register').offset().top
     }, 300, function(){ window.location.hash = '#register';});">Register</a>
-  </div>
+    </div>
   </div>
 
   <div class="container">
+    <!-- <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100026850401835" data-layout="button" data-size="large" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100026850401835&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div> -->
 
     <section class="jumbotron text-center" style="background-color:white;">
       <div class="container">
         <h1 class="jumbotron-heading">Mandarin & French Language Lesson</h1>
         <p class="lead text-muted">Summer vacation Class available for kids and teenagers. </p>
-
       </div>
     </section>
     <hr class="featurette-divider">
@@ -215,6 +240,7 @@
         <option value="madarin_for_kids_teens">Mandarin for kids/teens</option>
         <option value="intensive_mandarin">Intensive Mandarin</option>
         <option value="french_lesson">French Lesson</option>
+        <option value="group_chinese_lesson">Group Chinese Lesson</option>
     </select>
       </div>
 
@@ -237,8 +263,7 @@
       <h1 id="parking" class="display-4">Parking</h1>
       <br/>
       <div class="row iframe-container">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qlp7Jfc2oL04JOBzeeW9OW4T8V_K17nx" width="100%" height="420" frameborder="0"
-          style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qlp7Jfc2oL04JOBzeeW9OW4T8V_K17nx" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
 
@@ -257,20 +282,25 @@
 
           <div class="col-4 col-md">
             <span>
-              <h5>Business Hours</h5>
-            </span>
-            <span class="text-muted">Monday - Friday 9:30 am - 7:30 pm</span><br/>
-            <span class="text-muted">Saturday & Sunday 11 am - 7 pm</span><br/>
-          </div>
-
-          <div class="col-4 col-md">
-            <span>
               <h5>Location</h5>
             </span>
             <span class="text-muted">Bay Area Chinese Language School</span><br/>
             <span class="text-muted">3485 Monroe Street, 95051 Santa Clara CA</span>
             <small class="d-block mb-3 text-muted">©Bay Area Chinese Language School 2014-2018</small>
           </div>
+
+          <div class="col-4 col-md">
+            <span>
+              <h5>Business Hours</h5>
+            </span>
+            <span class="text-muted">Monday - Friday 9:30 am - 7:30 pm</span><br/>
+            <span class="text-muted">Saturday & Sunday 11 am - 7 pm</span><br/>
+            <div id="yelp-biz-badge-plain-2jxw3rEy6X4ABCCE5iz2Mw"><a href="http://yelp.com/biz/bay-area-chinese-language-school-santa-clara?utm_medium=badge_button&amp;utm_source=biz_review_badge" target="_blank">Check out Bay Area Chinese Language School on Yelp</a></div>
+
+          </div>
+
+
+
         </div>
       </footer>
     </div>
