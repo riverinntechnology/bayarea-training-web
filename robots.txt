@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://bayarea-training.com/sitemap.xml
