@@ -19,9 +19,8 @@
   animation: fadein 0.5s;
 }
 #ouibounce-modal .modal2 {
-  width: 500px;
-  height: 400px;
-  background-color: #f0f1f2;
+  width: 1024px;
+  height: 512px;
   z-index: 1;
   position: absolute;
   margin: auto;
@@ -32,14 +31,11 @@
   border-radius: 4px;
   -webkit-animation: popin 0.3s;
   animation: popin 0.3s;
-  /* background-image: url("../img/cici1.jpg"); */
+  background-image: url("../img/bg.jpg");
 }
 
 #ouibounce-modal .modal-title2 {
-  font-size: 18px;
-  background-color: black;
   color: #fff;
-  padding: 10px;
   margin: 0;
   border-radius: 4px 4px 0 0;
   text-align: center;
