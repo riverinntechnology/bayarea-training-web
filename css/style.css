@@ -42,6 +42,11 @@
   padding-bottom: 20px;
 }
 
-.modal-footer2 {
+.btn-no-tks-desktop {
   padding-bottom: 50px;
+}
+
+.mobile-no-tks{
+  padding-top: 20px;
+  font-size: 70%;
 }

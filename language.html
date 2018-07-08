@@ -32,10 +32,10 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/ouibounce.min.js"></script>
+  <script type="text/javascript" src="js/ouibounce.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <link rel="stylesheet" href="css/ouibounce.css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -354,10 +354,8 @@
   </div>
 
   <!-- OuiBounce Modal -->
-  <div id="ouibounce-modal">
+  <div class="ouibounce-modal" id="ouibounce-desktop">
     <div class="underlay">
-
-
     </div>
     <div class="modal2">
       <div class="bg"></div>
@@ -380,15 +378,34 @@
         </div>
       </div>
 
-      <div class="modal-footer2">
+      <div class="modal-footer2 btn-no-tks-desktop">
         <p>no thanks</p>
       </div>
     </div>
   </div>
 
 
-
-
+<!-- promo mobile -->
+<div class="ouibounce-modal" id="ouibounce-mobile">
+  <div class="underlay">
+  </div>
+  <div class="modal2">
+    <div class="bg"></div>
+    <div class="modal-title2">
+    </div>
+    <div class="modal-body2">
+      <div class="text-center">
+        <h5>Now Only $30!</h5>
+        <h6>For 2 Hours Private Lesson</h6>
+      </div>
+      <div class="form-row text-center">
+        <div class="col-12">
+          <a class="btn btn-md mt-2 btn-outline-primary" href="https://calendly.com/jessica-yzliu/2-one-hour-private-chinese-lesson/07-07-2018" target="_blank">Book Now!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 
