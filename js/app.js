@@ -7,7 +7,7 @@ $(function () {
         ouibounceIdName = "ouibounce-mobile";
       }
       ouibounce = ouibounce(document.getElementById(ouibounceIdName), {
-      aggressive: false,
+      aggressive: true,
       timer: 0,
       callback: function() {
          isFired = true;
