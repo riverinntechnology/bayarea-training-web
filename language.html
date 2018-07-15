@@ -35,7 +35,7 @@
   <script type="text/javascript" src="js/ouibounce.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <link rel="stylesheet" href="css/ouibounce.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -85,7 +85,7 @@
     <div>
       <a class="btn btn-outline-primary" href="#" onclick="jQuery('html, body').animate({
     scrollTop: $('#register').offset().top
-    }, 300, function(){ window.location.hash = '#register';});">Register</a>
+  }, 300, function(){ window.location.hash = '#register';});">Contact Us</a>
     </div>
   </div>
 
@@ -93,7 +93,8 @@
     <section class="jumbotron text-center" style="background-color:white;">
       <div class="container">
         <h1 class="jumbotron-heading">Mandarin & French Language Lesson</h1>
-        <p class="lead text-muted">Summer vacation Class available for kids and teenagers. </p>
+        <p class="lead text-muted">Try Our Free Trial Lesson!</p>
+        <a id="btn-book-trial" class="btn btn-lg btn-outline-primary" href="https://squareup.com/appointments/book/AAZC07XSRDEMC/bay-area-chinese-language-school-santa-clara-ca" target="_blank">Book Now</a>
       </div>
     </section>
     <hr class="featurette-divider">
@@ -190,7 +191,7 @@
             </ul>
 
             <div>
-              <!-- <a id="btn-book-private" class="btn btn-outline-primary" href="https://calendly.com/jessica-yzliu/private-chinese-lesson" target="_blank">Book Now</a> -->
+              <a id="btn-book-trial" class="btn btn-lg btn-outline-primary" href="https://squareup.com/appointments/book/AAZC07XSRDEMC/bay-area-chinese-language-school-santa-clara-ca" target="_blank">Book Now</a>
             </div>
 
           </div>
@@ -210,7 +211,7 @@
             </ul>
 
             <div>
-              <!-- <a id="btn-book-group" class="btn btn-outline-primary" href="https://calendly.com/jessica-yzliu/small-group-chinese-lesson" target="_blank">Book Now</a> -->
+              <a id="btn-book-trial" class="btn btn-lg btn-outline-primary" href="https://squareup.com/appointments/book/AAZC07XSRDEMC/bay-area-chinese-language-school-santa-clara-ca" target="_blank">Book Now</a>
             </div>
 
           </div>
@@ -230,7 +231,7 @@
             </ul>
 
             <div>
-              <!-- <a id="btn-book-kids" class="btn btn-outline-primary" href="https://calendly.com/jessica-yzliu/mandarin-for-kids-teens" target="_blank">Book Now</a> -->
+              <a id="btn-book-trial" class="btn btn-lg btn-outline-primary" href="https://squareup.com/appointments/book/AAZC07XSRDEMC/bay-area-chinese-language-school-santa-clara-ca" target="_blank">Book Now</a>
             </div>
 
           </div>
@@ -248,7 +249,7 @@
 
     <hr class="register-divider">
     <div class="register-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 id="register" class="display-4">Register</h1>
+      <h1 id="register" class="display-4">Contact Us</h1>
     </div>
 
     <form action="https://formspree.io/jessica.yzliu+bts@gmail.com" method="POST">
@@ -269,23 +270,25 @@
       </div>
 
       <div class="form-group">
-        <label for="form-your-language"> Which class are you registering for? (*)</label>
+        <label for="form-your-language"> Which class are you interested in? (*)</label>
         <select class="form-control" name="your-language" id="form-your-language" required>
                     <option value="chinese_mandarin">Chinese Mandarin</option>
+                    <option value="chinese_mandarin">Skype Chinese Mandarin</option>
                     <option value="madarin_for_kids_teens">Mandarin for kids/teens</option>
                     <option value="intensive_mandarin">Intensive Mandarin</option>
+                    <option value="intensive_mandarin">HSK Prep Course</option>
                     <option value="french_lesson">French Lesson</option>
                     <option value="group_chinese_lesson">Group Chinese Lesson</option>
                 </select>
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="form-your-date"> Start date (*)</label>
         <input type="date" class="form-control" id="form-your-date" name="your-date" required>
-      </div>
+      </div> -->
 
       <div class="form-group">
-        <label for="form-your-message"> Your Message</label>
+        <label for="form-your-message">Your Message</label>
         <textarea class="form-control" cols="40" rows="10" aria-invalid="false" id="form-your-message" name="your-message"></textarea>
       </div>
 
