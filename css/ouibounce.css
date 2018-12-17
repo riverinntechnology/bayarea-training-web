@@ -34,13 +34,13 @@
 #ouibounce-desktop .modal2 {
   width: 1024px;
   height: 512px;
-  background-image: url("../img/bg.jpg");
-  
+  background-image: url("../img/holiday-season.jpg");
+
 }
 
 #ouibounce-mobile .modal2 {
   width: 300px;
-  height: 150px;
+  height: 185px;
   background-color: #eee;
 }
 

@@ -18,7 +18,7 @@ $(function () {
     $('body').on('click', function() {
         $('.ouibounce-modal').hide();
       });
-      $('.ouibounce-modal .modal-footer2').on('click', function() {
+      $('.ouibounce-modal .btn-no-tks-desktop').on('click', function() {
         $('.ouibounce-modal').hide();
       });
       $('.ouibounce-modal .modal2').on('click', function(e) {
