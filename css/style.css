@@ -55,3 +55,49 @@
   background-color: #f9614a;
   color: white;
 }
+
+.btn-orange {
+  background-color: #f77e23;
+  border-color: #f77e23;
+  font-size: 26px;
+
+  font-weight: normal;
+  padding: 10px 32px;
+  transition: ease 0.2s all;
+  margin-top: 12px;
+  border-radius: 28px;
+}
+
+.btn-orange:hover {
+    background: #f99245;
+    border-color: #f99245;
+    transition: ease 0.2s all;
+}
+
+.btn-orange:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-orange:not(:disabled):not(.disabled).active, .btn-orange:not(:disabled):not(.disabled):active{
+  background: #f9ac70;
+  border-color: #f9ac70;
+  transition: ease 0.2s all;
+}
+
+.free_to_book_img{
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: -90px;
+
+}
+
+.container{
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.parking-iframe-container {
+  height: 480px;
+}
