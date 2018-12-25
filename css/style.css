@@ -1,3 +1,11 @@
+body {
+  /* font-family: 'Nunito Sans' !important; */
+  color: #5c5c5c !important;
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 .footer-container {
   font-size: .9rem;
 }
@@ -52,7 +60,7 @@
 }
 
 .most-popular {
-  background-color: #f9614a;
+  background-color: #f99245;
   color: white;
 }
 
