@@ -73,7 +73,7 @@ body {
   padding: 10px 32px;
   transition: ease 0.2s all;
   margin-top: 12px;
-  border-radius: 28px;
+  border-radius: 5px;
 }
 
 .btn-orange:hover {
@@ -150,4 +150,13 @@ body {
   background: #ff6666;
   border-color: #ff6666;
   transition: ease 0.2s all;
+}
+
+.pricing-container {
+  background-color:#f5f5f5;
+  padding-bottom: 30px;
+}
+
+.price-card {
+  margin-bottom: 0 !important;
 }
