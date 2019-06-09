@@ -129,15 +129,15 @@ body {
 .btn-career {
   background-color: #ff5050;
   border-color: #ff5050;
-  font-size: 26px;
+  font-size: 25px;
   color: white;
   font-weight: normal;
-  padding: 10px 32px;
+  /* padding: 10px 32px; */
   transition: ease 0.2s all;
-  margin-top: 12px;
+  /* margin-top: 12px; */
   border-radius: 5px;
-  width: 100%;
-  margin: 20px;
+  /* width: 100%; */
+  /* margin: 20px; */
 }
 
 .btn-career:hover {
