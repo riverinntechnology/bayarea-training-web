@@ -130,7 +130,7 @@
             </ul>
             <h5>Compensation:</h5>
               <ul>
-                <li>$18-20 per hour DOE</li> 
+                <li>$18-20 per hour DOE</li>
                 <li>6-30 hours per month</li>
               </ul>
             If you are interested, complete the form and attach your resume. We look forward to hearing from you!</p>
@@ -147,44 +147,54 @@
       <h1 id="register" class="display-4">Apply Today!</h1>
     </div>
 
-    <form action="https://formspree.io/jessica.yzliu+bts@gmail.com" method="POST">
-      <input type="hidden" id="form-type" name="page" value="language">
+    <form action="https://formkeep.com/f/565cce0dcb77"
+          accept-charset="UTF-8"
+          enctype="multipart/form-data"
+          method="POST">
+
+    <!-- <form action="https://www.formbackend.com/f/6f6159e259cd1e25"
+          accept-charset="UTF-8"
+          enctype="multipart/form-data"
+          method="POST"> -->
+
+    <!-- <form action="https://liveformhq.com/form/63bb7d0d-e255-41c3-b3da-7e512e1747a9"
+          accept-charset="UTF-8"
+          enctype="multipart/form-data"
+          method="POST"> -->
+
+      <input type="hidden" id="form-type" name="page" value="job">
       <div class="form-group">
-        <label for="form-your-name"> Your Name (*)</label>
-        <input type="text" class="form-control" id="form-your-name" name="your-name" required>
+        <label for="form-your-name">First Name (*)</label>
+        <input type="text" class="form-control" id="form-your-firstname" name="your-firstname" required>
       </div>
 
       <div class="form-group">
-        <label for="form-your-email"> Your Email (*)</label>
+        <label for="form-your-name">Last Name (*)</label>
+        <input type="text" class="form-control" id="form-your-lastname" name="your-lastname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="form-your-email">Email (*)</label>
         <input type="email" class="form-control" id="form-your-email" name="your-email" required>
       </div>
 
       <div class="form-group">
-        <label for="form-your-phone"> Your Phone Number</label>
+        <label for="form-your-phone">Phone Number</label>
         <input type="tel" class="form-control" id="form-your-phone" name="your-phone">
       </div>
 
       <div class="form-group">
-        <label for="form-your-language"> Which class are you interested in? (*)</label>
-        <select class="form-control" name="your-language" id="form-your-language" required>
-                    <option value="chinese_mandarin">Chinese Mandarin</option>
-                    <option value="chinese_mandarin">Skype Chinese Mandarin</option>
-                    <option value="madarin_for_kids_teens">Mandarin for kids/teens</option>
-                    <option value="intensive_mandarin">Intensive Mandarin</option>
-                    <option value="intensive_mandarin">HSK Prep Course</option>
-                    <option value="french_lesson">French Lesson</option>
-                    <option value="group_chinese_lesson">Group Chinese Lesson</option>
-                </select>
+        <label for="form-your-message">Intro or Cover</label>
+        <textarea class="form-control" cols="40" rows="10" aria-invalid="false" id="form-intro" name="your-intro"></textarea>
       </div>
 
-      <!-- <div class="form-group">
-        <label for="form-your-date"> Start date (*)</label>
-        <input type="date" class="form-control" id="form-your-date" name="your-date" required>
-      </div> -->
-
       <div class="form-group">
-        <label for="form-your-message">Your Message</label>
-        <textarea class="form-control" cols="40" rows="10" aria-invalid="false" id="form-your-message" name="your-message"></textarea>
+        <label for="form-your-resume">Upload your resume</label>
+        <input type="file" class="form-control-file" id="form-your-resume" name="your-resume">
+      </div>
+
+      <div class="form-group"></div>
+        <div class="g-recaptcha" data-sitekey="6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></div>
       </div>
 
       <div class="text-center">

@@ -2,6 +2,10 @@ var ouibounce;
 var isFired = false;
 
 $(function () {
+
+      if (typeof ouibounce !== "function") {
+        return;
+      }
       var ouibounceIdName = "ouibounce-desktop";
       if (isMobile()) {
         ouibounceIdName = "ouibounce-mobile";
