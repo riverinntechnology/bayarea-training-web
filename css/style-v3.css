@@ -132,12 +132,12 @@ body {
   font-size: 25px;
   color: white;
   font-weight: normal;
-  /* padding: 10px 32px; */
-  transition: ease 0.2s all;
-  /* margin-top: 12px; */
-  border-radius: 5px;
-  /* width: 100%; */
-  /* margin: 20px; */
+  padding: 10px 32px;
+   transition: ease 0.2s all;
+   margin-top: 12px;
+   border-radius: 5px;
+   width: 100%;
+   margin: 20px;
 }
 
 .btn-career:hover {
@@ -159,4 +159,27 @@ body {
 
 .price-card {
   margin-bottom: 0 !important;
+}
+
+.top-hiring-button {
+  background-color: #ff5050;
+  color: white !important;
+  border-color: #ff5050;
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+  transition: ease 0.2s all;
+  border-radius: 5px;
+}
+
+.top-hiring-button:hover {
+  background: #ff6666;
+  border-color: #ff6666;
+  transition: ease 0.2s all;
+}
+
+.top-hiring-buttonr:not(:disabled):not(.disabled).active, .top-hiring-button:not(:disabled):not(.disabled):active{
+background: #ff6666;
+border-color: #ff6666;
+transition: ease 0.2s all;
 }
