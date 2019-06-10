@@ -300,22 +300,27 @@
     <form action="https://formspree.io/jessica.yzliu+bts@gmail.com" method="POST">
       <input type="hidden" id="form-type" name="page" value="language">
       <div class="form-group">
-        <label for="form-your-name"> Your Name (*)</label>
-        <input type="text" class="form-control" id="form-your-name" name="your-name" required>
+        <label for="form-your-name">First Name (*)</label>
+        <input type="text" class="form-control" id="form-your-firstname" name="your-firstname" required>
       </div>
 
       <div class="form-group">
-        <label for="form-your-email"> Your Email (*)</label>
+        <label for="form-your-name">Last Name (*)</label>
+        <input type="text" class="form-control" id="form-your-lastname" name="your-lastname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="form-your-email">Email (*)</label>
         <input type="email" class="form-control" id="form-your-email" name="your-email" required>
       </div>
 
       <div class="form-group">
-        <label for="form-your-phone"> Your Phone Number</label>
-        <input type="tel" class="form-control" id="form-your-phone" name="your-phone">
+        <label for="form-your-phone">Phone Number (*)</label>
+        <input type="tel" class="form-control" id="form-your-phone" name="your-phone" required>
       </div>
 
       <div class="form-group">
-        <label for="form-your-language"> Which class are you interested in? (*)</label>
+        <label for="form-your-language">Which class are you interested in? (*)</label>
         <select class="form-control" name="your-language" id="form-your-language" required>
                     <option value="chinese_mandarin">Chinese Mandarin</option>
                     <option value="chinese_mandarin">Skype Chinese Mandarin</option>
@@ -323,7 +328,7 @@
                     <option value="intensive_mandarin">Intensive Mandarin</option>
                     <option value="intensive_mandarin">HSK Prep Course</option>
                     <option value="french_lesson">French Lesson</option>
-                    <option value="group_chinese_lesson">Group Chinese Lesson</option>
+                    <!-- <option value="group_chinese_lesson">Group Chinese Lesson</option> -->
                 </select>
       </div>
 
