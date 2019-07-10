@@ -94,6 +94,10 @@ body {
   transition: ease 0.2s all;
 }
 
+.btn-registration {
+  width: 100% !important;
+}
+
 .free_to_book_img{
   width: 150px;
   margin-top: 20px;
