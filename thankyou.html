@@ -35,9 +35,9 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="js/ouibounce.min.js"></script> -->
+  <script type="text/javascript" src="js/ouibounce.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
-  <!-- <link rel="stylesheet" href="css/ouibounce.css"> -->
+  <link rel="stylesheet" href="css/ouibounce.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style-v4.css">
 
@@ -85,116 +85,41 @@
 
             <a href="language.html" style="text-decoration:none;color:black;font-size:35px;">Bay Area Chinese Language School</a>
     </h5>
+    <nav class="d-none d-sm-block my-2 my-md-0 mr-md-3">
+      <a id="btn-hiring" class="p-2 top-hiring-button" href="career.html" target="_blank" style="font-size:25px;">Jobs</a>
+      <a class="p-2 text-dark" href="#" onclick="jQuery('html, body').animate({
+    scrollTop: $('#pricing').offset().top
+  }, 300, function(){ window.location.hash = '#pricing';});" style="font-size:25px;">Pricing</a>
+  <a class="p-2 text-dark" href="#" onclick="jQuery('html, body').animate({
+    scrollTop: $('#register').offset().top
+  }, 300, function(){ window.location.hash = '#register';});" style="font-size:25px; margin-right: 10px">Contact</a>
+    </nav>
 
-
-    <br>
   </div>
 
   <div class="container">
+
+      <!-- <div class="row" >
+          <a id="btn-registration" class="btn btn-lg btn-primary btn-career" style="background-color: #76a2e8" style="color: white; " href="registration.html" target="_blank">REGISTER NOW：INTRODUCTORY WEEKEND CHINESE CLASS FOR KIDS & TEENS  📣</a>
+      </div> -->
+
+    <div class="row d-md-none d-lg-none d-xl-none" >
+        <a id="btn-hiring" class="btn btn-lg btn-primary btn-career" href="career.html" target="_blank">&#x270d; WE ARE HIRING!</a>
+    </div>
+
     <section class="jumbotron text-center" style="background-color:#f5f5f5;">
       <div class="container">
-          <h1 class="jumbotron-heading">Career at Bay Area Chinese Language School</h1>
-          <h4  class="jumbotron-heading">We're looking for fun and enthusiastic teachers to join us!</h4>
+        <h1 class="jumbotron-heading">THANK YOU FOR YOUR SUBMISSION!</h1>
       </div>
     </section>
     <hr class="divider">
     <br>
     <div class="row">
-        <div class="col-md-7 p-3">
-            <h2 class="featurette-heading">Chinese Tutor</h2>
-        </div>
-      <div class="col-md-7 p-3">
+      <div class="col-md-12 p-3 text-center">
         <div>
-            <p>We are looking for passionate individuals who wants to help spread Chinese language and culture.</p>
-            <h5>Qualifications:</h5>
-            <ul>
-                <li>Native Mandarin speaker without any accent</li>
-                <li>Communicate very well in English</li>
-                <li>Previous Experience in other Chinese schools</li>
-                <li>Mandarin teaching experience is a must</li>
-                <li>Good people skills</li>
-                <li>Willing to learn and to-do attitude</li>
-                <li>Need to be very punctual and enthusiastic</li>
-                <li>Must be legal to work</li>
-                <li>Degree in Chinese language preferred</li>
-                <li>Be able to coordinate fun and cultural activities</li>
-            </ul>
-            <h5>Duties may include but are not limited to:</h5>
-            <ul>
-                <li>Teach a group of students in a classroom environment with pre-defined curriculum</li>
-                <li>Teach one or more students in a private or semi-private environment</li>
-                <li>Create lesson plans and materials</li>
-                <li>Create fun and engaging curriculum</li>
-                <li>Maintain a safe, healthy and happy learning environment</li>
-                <li>Other duties as assigned</li>
-            </ul>
-            <h5>Compensation:</h5>
-              <ul>
-                <li>$20-25 per hour DOE</li>
-                <li>+6 hours per month</li>
-              </ul>
-            If you are interested, complete the form and attach your resume. We look forward to hearing from you!</p>
-            <h5><strong>* No phone calls.</strong></h5> Submit your resume through the bottom online form.
+          <h3>We will get back to you in the next 24 hours.</h3>
         </div>
       </div>
-      <div class="col-md-5 p-3">
-        <img class="featurette-image img-fluid  rounded " data-src="holder.js/500x500/auto" alt="500x500" src="img/career.jpg" data-holder-rendered="true">
-      </div>
-    </div>
-
-    <hr class="register-divider">
-    <div class="register-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 id="register" class="display-4">Apply Today!</h1>
-    </div>
-
-    <form action="http://formbackend2-env.7wyhvmahr9.us-west-2.elasticbeanstalk.com/api/upload-form/career"
-          accept-charset="UTF-8"
-          enctype="multipart/form-data"
-          method="POST">
-
-      <input type="hidden" id="form-type" name="page" value="job">
-      <div class="form-group">
-        <label for="form-your-name">First Name (*)</label>
-        <input type="text" class="form-control" id="form-your-firstname" name="your-firstname" required>
-      </div>
-
-      <div class="form-group">
-        <label for="form-your-name">Last Name (*)</label>
-        <input type="text" class="form-control" id="form-your-lastname" name="your-lastname" required>
-      </div>
-
-      <div class="form-group">
-        <label for="form-your-email">Email (*)</label>
-        <input type="email" class="form-control" id="form-your-email" name="your-email" required>
-      </div>
-
-      <div class="form-group">
-        <label for="form-your-phone">Phone Number  (*)</label>
-        <input type="tel" class="form-control" id="form-your-phone" name="your-phone" required>
-      </div>
-
-      <div class="form-group">
-        <label for="form-your-message">Intro or Cover</label>
-        <textarea class="form-control" cols="40" rows="10" aria-invalid="false" id="form-intro" name="your-intro"></textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="form-your-resume">Upload your resume</label>
-        <input type="file" class="form-control-file" id="form-your-resume" name="your-resume">
-      </div>
-
-      <div class="form-group"></div>
-        <div class="g-recaptcha" data-sitekey="6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></div>
-      </div>
-
-      <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-
-      <div class="text-center">
-        <input id="btn-register-job" type="submit" value="SEND" class="btn btn-primary btn-lg btn-orange">
-      </div>
-    </form>
-
-    <br/>
 
 
     <div class="container footer-container">
@@ -247,14 +172,7 @@
       </footer>
     </div>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></script>
-  <script>
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo', {action: 'homepage'}).then(function(token) {
-        document.getElementById('g-recaptcha-response').value = token;
-      });
-    });
-  </script>
+
 </body>
 
 </html>
