@@ -194,3 +194,8 @@ transition: ease 0.2s all;
   font-size: 18px;
   font-weight: 400;
 }
+
+.pricing-list {
+  text-align: left;
+  line-height: 2em;
+}
