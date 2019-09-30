@@ -187,3 +187,9 @@ background: #ff6666;
 border-color: #ff6666;
 transition: ease 0.2s all;
 }
+
+
+tr:first-child th{
+  background-color: darkgray;
+  color: white;
+}
