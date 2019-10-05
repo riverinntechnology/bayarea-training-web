@@ -173,9 +173,9 @@ transition: ease 0.2s all;
 }
 
 .booking-btn:hover {
-  background-color: transparent;
-  border-color: #57a99a;
-  color: #57a99a;
+  background-color: white;
+  border-color: white;
+  color: #94ceca;
   transition: ease 0.2s all;
 }
 
@@ -185,9 +185,11 @@ transition: ease 0.2s all;
 }
 
 .booking-btn:not(:disabled):not(.disabled).active, .booking-btn:not(:disabled):not(.disabled):active {
-  background-color: transparent;
+  background-color: white;
   border-color: #57a99a;
+  color: #94ceca;
   transition: ease 0.2s all;
+  outline: 0 !important;
 }
 
 .btn-blue {
@@ -232,17 +234,16 @@ transition: ease 0.2s all;
 }
 
 .register-btn:hover {
-  background-color: transparent;
-  border-color: #57a99a;
-  color: #57a99a;
+  background-color: #94ceca;
+  border-color:#94ceca;
+  color: white;
   transition: ease 0.2s all;
-  transform: scale()
 }
 
 .register-btn:not(:disabled):not(.disabled).active, .register-btn:not(:disabled):not(.disabled):active{
-  background-color: transparent;
-  border-color: #57a99a;
-  color: #57a99a;
+  background-color: #94ceca;
+  border-color:#94ceca;
+  color: white;
   transition: ease 0.2s all;
 }
 
