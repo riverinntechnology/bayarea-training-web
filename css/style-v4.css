@@ -59,41 +59,6 @@ body {
   font-size: 70%;
 }
 
-.most-popular {
-  background-color: #f99245;
-  color: white;
-}
-
-.btn-orange {
-  background-color: #f77e23;
-  border-color: #f77e23;
-  font-size: 21px;
-  color: white;
-  font-weight: normal;
-  padding: 10px 32px;
-  transition: ease 0.2s all;
-  margin-top: 12px;
-  border-radius: 5px;
-}
-
-.btn-orange:hover {
-    background: #f99245;
-    border-color: #f99245;
-    transition: ease 0.2s all;
-}
-
-.btn-orange:focus{
-    border-color: #cccccc;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.btn-orange:not(:disabled):not(.disabled).active, .btn-orange:not(:disabled):not(.disabled):active{
-  background: #f9ac70;
-  border-color: #f9ac70;
-  transition: ease 0.2s all;
-}
-
 .btn-registration {
   width: 100% !important;
 }
@@ -115,7 +80,7 @@ body {
 }
 
 .career-cta {
-  background-color: #ff5050;
+  background-color: #a088c7;
   border-radius: 5px;
   color: white;
   text-align: center;
@@ -131,8 +96,8 @@ body {
 }
 
 .btn-career {
-  background-color: #ff5050;
-  border-color: #ff5050;
+  background-color: #a088c7;
+  border-color: #a088c7;
   font-size: 25px;
   color: white;
   font-weight: normal;
@@ -145,14 +110,14 @@ body {
 }
 
 .btn-career:hover {
-    background: #ff6666;
-    border-color: #ff6666;
+    background: #9074be;
+    border-color: #9074be;
     transition: ease 0.2s all;
 }
 
 .btn-career:not(:disabled):not(.disabled).active, .btn-career:not(:disabled):not(.disabled):active{
-  background: #ff6666;
-  border-color: #ff6666;
+  background: #a088c7;
+  border-color: #a088c7;
   transition: ease 0.2s all;
 }
 
@@ -166,24 +131,123 @@ body {
 }
 
 .top-hiring-button {
-  background-color: #ff5050;
-  color: white !important;
-  border-color: #ff5050;
+  /* background-color: #ff5050; */
+  /* color: white !important; */
+  /* border-color: #ff5050; */
   font-size: 25px;
-  color: white;
+  /* color: white; */
   font-weight: normal;
   transition: ease 0.2s all;
   border-radius: 5px;
 }
 
 .top-hiring-button:hover {
-  background: #ff6666;
-  border-color: #ff6666;
+  /* background: #ff6666;
+  border-color: #ff6666; */
   transition: ease 0.2s all;
 }
 
 .top-hiring-buttonr:not(:disabled):not(.disabled).active, .top-hiring-button:not(:disabled):not(.disabled):active{
-background: #ff6666;
-border-color: #ff6666;
+/* background: #ff6666;
+border-color: #ff6666; */
 transition: ease 0.2s all;
+}
+
+.et_pb_dollar_sign {
+  position: absolute;
+  margin-left: -.5em;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pricing-list {
+  text-align: left;
+  line-height: 2em;
+}
+
+.booking-btn {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-width: 0.1em;
+}
+
+.booking-btn:hover {
+  background-color: transparent;
+  border-color: #57a99a;
+  color: #57a99a;
+  transition: ease 0.2s all;
+}
+
+.booking-btn:focus{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.booking-btn:not(:disabled):not(.disabled).active, .booking-btn:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border-color: #57a99a;
+  transition: ease 0.2s all;
+}
+
+.btn-blue {
+  background-color: #94ceca;
+  border-color: #94ceca;
+  font-size: 21px;
+  color: white;
+  font-weight: normal;
+  padding: 10px 32px;
+  transition: ease 0.2s all;
+  margin-top: 12px;
+  border-radius: 5px;
+}
+
+.btn-blue:hover {
+  background-color: #57a99a;
+  border-color: #57a99a;
+  transition: ease 0.2s all;
+}
+
+.btn-blue:focus{
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-blue:not(:disabled):not(.disabled).active, .btn-blue:not(:disabled):not(.disabled):active{
+  background-color: #57a99a;
+  border-color: #57a99a;
+  transition: ease 0.2s all;
+}
+
+.jumbotron-heading {
+  color: white;
+}
+
+.register-btn {
+  background-color: transparent;
+  color: #94ceca;
+  border-color: #94ceca;
+  border-width: 0.1em;
+}
+
+.register-btn:hover {
+  background-color: transparent;
+  border-color: #57a99a;
+  color: #57a99a;
+  transition: ease 0.2s all;
+  transform: scale()
+}
+
+.register-btn:not(:disabled):not(.disabled).active, .register-btn:not(:disabled):not(.disabled):active{
+  background-color: transparent;
+  border-color: #57a99a;
+  color: #57a99a;
+  transition: ease 0.2s all;
+}
+
+.card-footer-custom {
+  background-color: white;
+  border-top: 0;
+  padding-bottom: 1.5em;
 }
