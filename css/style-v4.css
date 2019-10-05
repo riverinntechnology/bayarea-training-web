@@ -223,3 +223,31 @@ transition: ease 0.2s all;
 .jumbotron-heading {
   color: white;
 }
+
+.register-btn {
+  background-color: transparent;
+  color: #94ceca;
+  border-color: #94ceca;
+  border-width: 0.1em;
+}
+
+.register-btn:hover {
+  background-color: transparent;
+  border-color: #57a99a;
+  color: #57a99a;
+  transition: ease 0.2s all;
+  transform: scale()
+}
+
+.register-btn:not(:disabled):not(.disabled).active, .register-btn:not(:disabled):not(.disabled):active{
+  background-color: transparent;
+  border-color: #57a99a;
+  color: #57a99a;
+  transition: ease 0.2s all;
+}
+
+.card-footer-custom {
+  background-color: white;
+  border-top: 0;
+  padding-bottom: 1.5em;
+}
