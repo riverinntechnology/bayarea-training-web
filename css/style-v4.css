@@ -252,3 +252,8 @@ transition: ease 0.2s all;
   border-top: 0;
   padding-bottom: 1.5em;
 }
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
