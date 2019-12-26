@@ -257,3 +257,15 @@ transition: ease 0.2s all;
   outline: none !important;
   box-shadow: none;
 }
+
+.cd-faq__trigger, .cd-faq__category-selected, .cd-faq__category:hover {
+  color: #57a99a !important;
+}
+
+.cd-faq__category-selected::before{
+  background-color: #57a99a !important;
+}
+
+.cd-faq__trigger::before, ::after {
+  background-color: #57a99a !important;
+}
