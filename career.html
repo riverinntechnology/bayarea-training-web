@@ -182,13 +182,6 @@
         <label for="form-your-resume">Upload your resume</label>
         <input type="file" class="form-control-file" id="form-your-resume" name="your-resume">
       </div>
-
-      <div class="form-group"></div>
-        <div class="g-recaptcha" data-sitekey="6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></div>
-      </div>
-
-      <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-
       <div class="text-center">
         <input id="btn-register-job" type="submit" value="SEND" class="btn btn-primary btn-lg btn-blue">
       </div>
@@ -247,14 +240,6 @@
       </footer>
     </div>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></script>
-  <script>
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo', {action: 'homepage'}).then(function(token) {
-        document.getElementById('g-recaptcha-response').value = token;
-      });
-    });
-  </script>
 </body>
 
 </html>
