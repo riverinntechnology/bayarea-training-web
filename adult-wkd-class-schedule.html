@@ -101,12 +101,12 @@
     <section class="jumbotron text-center" style="background-color:#94ceca;">
       <div class="container">
         <h1 class="jumbotron-heading">Announcement</h1>
-        <h5 style="color: white; text-align:justify;">Due to the health and safety concerns for our students and teachers, 
-          all current and upcoming classes will be held online until further notice. 
+        <h5 style="color: white; text-align:justify;">Due to the health and safety concerns for our students and teachers,
+          all current and upcoming classes will be held online until further notice.
           We have already sent email to students who are currently enrolled. </h5>
 
           <h5 style="color: white; text-align: justify;">
-            We will include information for anyone registering for new classes with information on how to join classes with our teachers. 
+            We will include information for anyone registering for new classes with information on how to join classes with our teachers.
             If anyone has questions or concerns, feel free to contact us through the registration or contact forms.
             </h5>
         <br>
@@ -155,11 +155,11 @@
               <li>Topics: Dates and Time, Hobbies</li>
               <li>Introduction about Chinese characters</li>
             </ul>
-        </div> 
+        </div>
       <!-- </div> -->
 
 
-<!--       
+<!--
       <div class="col-md-5 p-3">
         <img class="featurette-image img-fluid  rounded " data-src="holder.js/600x600/auto" alt="600x600"
           src="img/group-class-img.jpg" data-holder-rendered="true">
@@ -175,7 +175,7 @@
     <div class="register-header px-3 py-3 pt-md-5 pb-md-4 mx-auto">
       <h4 id="register" class="display-4">Register Now</h4><br>
 
-    <form action="http://formbackend2-env.7wyhvmahr9.us-west-2.elasticbeanstalk.com/api/upload-form/weekend-class" accept-charset="UTF-8" enctype="multipart/form-data"
+    <form action="https://formbackend2.bayarea-training.com/api/upload-form/weekend-class" accept-charset="UTF-8" enctype="multipart/form-data"
       method="POST">
 
       <input type="hidden" id="form-type" name="page" value="weekend-class">
@@ -207,10 +207,7 @@
 
 
       <div class="form-group"></div>
-      <div class="g-recaptcha" data-sitekey="6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></div>
   </div>
-
-  <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
 
   <div class="text-center">
     <input id="btn-register-weekend-class" type="submit" value="SEND" class="btn btn-primary btn-lg btn-blue">
@@ -272,14 +269,6 @@
     </footer>
   </div>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></script>
-  <script>
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo', {action: 'homepage'}).then(function(token) {
-        document.getElementById('g-recaptcha-response').value = token;
-      });
-    });
-  </script>
 </body>
 
 </html>
