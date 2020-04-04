@@ -83,8 +83,15 @@
   </a>
     <h5 class="my-0 mr-md-auto font-weight-normal text-center">
 
-            <a href="language.html" style="text-decoration:none;color:black;font-size:35px;">Bay Area Chinese Language School</a>
+            <a href="/" style="text-decoration:none;color:black;font-size:35px;">Bay Area Chinese Language School</a>
     </h5>
+    <a class="p-2 text-dark" href="/#pricing" style="font-size:25px;">Pricing</a>
+
+    <a class="p-2 text-dark" href="/#register" style="font-size:25px; margin-right: 10px">Contact</a>
+    <a id="btn-hiring" class="p-2 top-hiring-button text-dark" href="#" 
+      style="font-size:25px;">Jobs</a>
+      <a id="btn-faq" class="p-2 top-hiring-button text-dark" href="/faq.html" 
+      style="font-size:25px;">FAQ</a>
 
 
     <br>
@@ -147,7 +154,7 @@
       <h1 id="register" class="display-4">Apply Today!</h1>
     </div>
 
-    <form action="http://formbackend2-env.7wyhvmahr9.us-west-2.elasticbeanstalk.com/api/upload-form/career"
+    <form action="https://formbackend2.bayarea-training.com/api/upload-form/career"
           accept-charset="UTF-8"
           enctype="multipart/form-data"
           method="POST">
@@ -182,13 +189,6 @@
         <label for="form-your-resume">Upload your resume</label>
         <input type="file" class="form-control-file" id="form-your-resume" name="your-resume">
       </div>
-
-      <div class="form-group"></div>
-        <div class="g-recaptcha" data-sitekey="6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></div>
-      </div>
-
-      <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-
       <div class="text-center">
         <input id="btn-register-job" type="submit" value="SEND" class="btn btn-primary btn-lg btn-blue">
       </div>
@@ -247,14 +247,6 @@
       </footer>
     </div>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo"></script>
-  <script>
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6LcR26cUAAAAAGx2iVImojIFJJez7OAordxKnpFo', {action: 'homepage'}).then(function(token) {
-        document.getElementById('g-recaptcha-response').value = token;
-      });
-    });
-  </script>
 </body>
 
 </html>
