@@ -235,7 +235,12 @@ transition: ease 0.2s all;
 }
 
 .jumbotron-heading {
-  color: white;
+  color: white !important;
+}
+
+.jumbo-bg-color {
+  background-color:#94ceca !important;
+
 }
 
 .register-btn {
