@@ -6,6 +6,10 @@ body {
   line-height: 1.5;
 }
 
+.nav-item{
+  text-align: right !important;
+} 
+
 .ba-nav-btn{
   text-decoration: none !important;
 }
