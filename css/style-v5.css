@@ -1,6 +1,7 @@
 body {
   /* font-family: 'Nunito Sans' !important; */
   color: #5c5c5c !important;
+  background-color: white !important;
   font-size: 18px !important;
   font-weight: 400;
   line-height: 1.5;
@@ -8,18 +9,10 @@ body {
 
 .nav-item{
   text-align: right !important;
-} 
+}
 
 .ba-nav-btn{
   text-decoration: none !important;
-}
-
-.ba-nav-btn:hover {
-  text-decoration: underline !important;
-}
-
-.ba-nav-btn:visited {
-  color: #343a40!important;
 }
 
 .footer-container {
