@@ -47,6 +47,7 @@
   <link rel="stylesheet" href="css/style-v5.css">
   <!-- <script src="https://use.fontawesome.com/a29e280231.js"></script> -->
   <script src="https://kit.fontawesome.com/f45ebff70a.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -478,6 +479,8 @@
           name="your-message"></textarea>
       </div>
 
+      <div class="g-recaptcha" data-sitekey="6LfR_OYUAAAAAM3mTtkBH1MvB6MHyho4ZYPgKXEW"></div>
+
       <div class="text-center">
         <input id="btn-register" type="submit" value="SEND" class="btn btn-primary btn-lg btn-blue">
       </div>
@@ -612,5 +615,14 @@
   </div>
 
 </body>
+<script>
+  window.onload = function() {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+};
+</script>
 
 </html>

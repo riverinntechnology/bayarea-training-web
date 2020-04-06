@@ -45,6 +45,8 @@
   <!-- <link rel="stylesheet" href="css/ouibounce.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style-v5.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 
@@ -205,6 +207,8 @@
         <input type="file" class="form-control-file" id="form-your-resume" name="your-resume">
       </div>
 
+      <div class="g-recaptcha" data-sitekey="6LfR_OYUAAAAAM3mTtkBH1MvB6MHyho4ZYPgKXEW"></div>
+
       <div class="text-center">
         <input id="btn-register-job" type="submit" value="SEND" class="btn btn-primary btn-lg btn-blue">
       </div>
@@ -267,11 +271,13 @@
   </div>
 </body>
 <script>
-  // Add the following code if you want the name of the file appear on select
-  $(".custom-file-input").on("change", function () {
-    var fileName = $(this).val().split("\\").pop();
-    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-  });
+  window.onload = function() {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+};
 </script>
 
 </html>
