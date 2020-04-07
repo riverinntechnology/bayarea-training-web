@@ -44,9 +44,10 @@
   <script type="text/javascript" src="js/app.js"></script>
   <link rel="stylesheet" href="css/ouibounce.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/style-v4.css">
+  <link rel="stylesheet" href="css/style-v5.css">
   <!-- <script src="https://use.fontawesome.com/a29e280231.js"></script> -->
   <script src="https://kit.fontawesome.com/f45ebff70a.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -85,34 +86,65 @@
   <!-- End Google Tag Manager (noscript) -->
 
 
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"
-    style="padding: 0px 0px 0px 10px!important;">
+  <!-- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"
+    style="padding: 0px 0px 0px 10px!important;"> -->
+  <!-- <nav class="navbar navbar-light navbar-expand-sm"></nav>
     <a class="navbar-brand" href="#">
-      <img src="img/website-logo1.jpg" width="80" height="80" class="d-inline-block align-top" alt="">
+      <img src="img/website-logo1.jpg" width="80" height="80" " alt="">
     </a>
     <h5 class="my-0 mr-md-auto font-weight-normal text-center">
 
       <a href="/" style="text-decoration:none;color:black;font-size:35px;">Bay Area Chinese Language
         School</a>
     </h5>
-    <nav class="d-none d-sm-block my-2 my-md-0 mr-md-3">
 
-      <!-- <a class="p-2 text-dark" href="class-schedule.html" target="_blank" style="font-size:25px;">Class Schedule</a> -->
 
-      <a class="p-2 text-dark" href="#" onclick="jQuery('html, body').animate({
+
+      <a class="p-2 text-dark ba-nav-btn" href="#" onclick="jQuery('html, body').animate({
     scrollTop: $('#pricing').offset().top
   }, 300, function(){ window.location.hash = '#pricing';});" style="font-size:25px;">Pricing</a>
 
-      <a class="p-2 text-dark" href="#" onclick="jQuery('html, body').animate({
+      <a class="p-2 text-dark ba-nav-btn" href="#" onclick="jQuery('html, body').animate({
     scrollTop: $('#register').offset().top
   }, 300, function(){ window.location.hash = '#register';});" style="font-size:25px; margin-right: 10px">Contact</a>
-      <a id="btn-hiring" class="p-2 top-hiring-button text-dark" href="career.html" 
+      <a id="btn-hiring" class="p-2 top-hiring-button text-dark ba-nav-btn" href="career.html"
         style="font-size:25px;">Jobs</a>
-        <a id="btn-faq" class="p-2 top-hiring-button text-dark" href="faq.html"
+        <a id="btn-faq" class="p-2 top-hiring-button text-dark ba-nav-btn" href="faq.html"
         style="font-size:25px;">FAQ</a>
-    </nav>
+    </nav> -->
 
-  </div>
+  <nav class="navbar navbar-light navbar-expand-md">
+    <a class="navbar-brand" href="#">
+      <img src="img/website-logo1.jpg" width="80" height="80" " alt="">
+        <span class=" d-none d-xs-none d-md-inline" style="text-decoration:none;color:black;font-size:25px;">Bay Area
+      Chinese Language School</span>
+    </a>
+    <!-- style="text-decoration:none;color:black;font-size:35px;" -->
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbar1">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="jQuery('html, body').animate({
+              scrollTop: $('#pricing').offset().top
+            }, 300, function(){ window.location.hash = '#pricing';});">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="jQuery('html, body').animate({
+              scrollTop: $('#register').offset().top
+            }, 300, function(){ window.location.hash = '#register';});">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a id="btn-hiring" class="nav-link" href="career.html">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a id="btn-faq" class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="container">
 
@@ -121,24 +153,28 @@
       </div> -->
 
     <div class="row d-md-none d-lg-none d-xl-none">
-      <a id="btn-hiring" class="btn btn-lg btn-primary btn-career" href="career.html" >&#x270d; We Are
+      <a id="btn-hiring" class="btn btn-lg btn-primary btn-career" href="career.html">&#x270d; We Are
         Hiring
       </a>
 
     </div>
 
-    <section class="jumbotron text-center" style="background-color:#94ceca;">
+    <section class="jumbotron text-center jumbo-bg-color">
       <div class="container">
         <!-- <h1 class="jumbotron-heading d-md-none d-lg-none d-xl-none">MOBILE ONLY</h1>
         <h1 class="jumbotron-heading d-none d-xs-none d-md-block">DESKTOP ONLY</h1> -->
         <!-- <h1 class="jumbotron-heading">Small Group & Private Chinese Lesson</h1> -->
 
-        <h1 class="jumbotron-heading">Announcement</h1>
-        <h5 style="color: white; text-align:justify;">Due to the health and safety concerns for our students and teachers,
-          all current and upcoming classes will be held online until further notice.
-          We have already sent email to students who are currently enrolled.
-          We will include information for anyone registering for new classes with information on how to join classes with our teachers.
-          If anyone has questions or concerns, feel free to contact us through the registration or contact forms. </h5>
+        <div class="jumbotron-heading text-justify">
+          <h2 class="text-center">Announcement</h2>
+          <h5>Due to the health and safety concerns for our students and teachers,
+            all current and upcoming classes will be held online until further notice.
+            We have already sent email to students who are currently enrolled.
+            We will include information for anyone registering for new classes with information on how to join classes
+            with our teachers.
+            If anyone has questions or concerns, feel free to contact us through the registration or contact forms.
+          </h5>
+        </div>
 
         <p class="lead"></p>
         <!-- <a id="btn-book-trial" class="btn btn-lg btn-primary booking-btn" href="adult-wkd-class-schedule.html"
@@ -171,8 +207,7 @@
           <h3>Private Lesson:</h3>
           <p>Private 1-on-1 lessons are the quickest and most cost-effective way to improve your Chinese speaking and
             listening skills. </p>
-          <a data-toggle="collapse" href="#private-collapse"
-            style="color: #94ceca;"><strong>Learn more...</strong></a>
+          <a data-toggle="collapse" href="#private-collapse" style="color: #94ceca;"><strong>Learn more...</strong></a>
 
           <div id="private-collapse" class="collapse">
             <p>Students who have attended group Chinese lessons in the past constantly report back to
@@ -230,7 +265,8 @@
           <p>Easily understand and adjust to the Chinese work culture as you master Mandarin speaking skills. </p>
           <a data-toggle="collapse" href="#business-collapse" style="color: #94ceca;"><strong>Learn more...</strong></a>
           <div id="business-collapse" class="collapse">
-            <p> Get access to plenty of practice material, fun exercises and worksheets to get the concepts right and stay on track
+            <p> Get access to plenty of practice material, fun exercises and worksheets to get the concepts right and
+              stay on track
               throughout and after the course. You will quickly learn how to effectively communicate in a professional
               business environment.</p>
             <ul>
@@ -257,7 +293,8 @@
           <a data-toggle="collapse" href="#kids-collapse" style="color: #94ceca;"><strong>Learn more...</strong></a>
           <div id="kids-collapse" class="collapse">
             <p>We provide children with a Chinese
-              speaking environment to ensure that they pronounce the proper sounds. That's the best and most natural way for children to learn.</p>
+              speaking environment to ensure that they pronounce the proper sounds. That's the best and most natural way
+              for children to learn.</p>
             <ul>
               <li>Chinese homework aid</li>
               <li>Chinese as Second / Third language</li>
@@ -340,8 +377,8 @@
             </ul>
           </div>
           <div class="card-footer card-footer-custom">
-            <a id="btn-book-trial" class="btn btn-lg btn-primary register-btn" href="adult-wkd-class-schedule.html"
-              >Register</a>
+            <a id="btn-book-trial" class="btn btn-lg btn-primary register-btn"
+              href="adult-wkd-class-schedule.html">Register</a>
           </div>
         </div>
 
@@ -376,7 +413,7 @@
       <ul>
         <li><small>Please click "Register" button, you will be leading to our booking website.</small></li>
         <li><small>Once you've selected a lesson then you will be able to see all the available schedules.
-          Please email us if you cannot find a suitable schedule.</small></li>
+            Please email us if you cannot find a suitable schedule.</small></li>
       </ul>
       <h6>Disclaimer:</h6>
       <ul>
@@ -397,8 +434,7 @@
       <h1 id="register" class="display-4">Contact Us</h1>
     </div>
 
-    <form action="https://formbackend2.bayarea-training.com/api/upload-form/index"
-      method="POST">
+    <form action="https://formbackend2.bayarea-training.com/api/upload-form/index" method="POST">
       <input type="hidden" id="form-type" name="page" value="index.html">
       <div class="form-group">
         <label for="form-your-name">First Name (*)</label>
@@ -442,6 +478,8 @@
         <textarea class="form-control" cols="40" rows="10" aria-invalid="false" id="form-your-message"
           name="your-message"></textarea>
       </div>
+
+      <div class="g-recaptcha" data-sitekey="6LfR_OYUAAAAAM3mTtkBH1MvB6MHyho4ZYPgKXEW"></div>
 
       <div class="text-center">
         <input id="btn-register" type="submit" value="SEND" class="btn btn-primary btn-lg btn-blue">
@@ -531,7 +569,7 @@
           <h1 class="text-center model-title-hello">Get Started Today!</h1>
           <p class="ready-take">Ready to start a new language?</p>
           <h1>Now Only $50!</h1>
-          <h2>For a 2-Hour Private Package Lesson</h2>
+          <h2>For a 2 1-Hour Private Package Lesson</h2>
         </div>
 
         <br>
@@ -563,7 +601,7 @@
       <div class="modal-body2">
         <div class="text-center">
           <h5>Now Only $50!</h5>
-          <h6>For a 2-Hours Private Package Lesson</h6>
+          <h6>For a 2 1-Hour Private Package Lesson</h6>
         </div>
         <div class="form-row text-center">
           <div class="col-12">
@@ -577,5 +615,14 @@
   </div>
 
 </body>
+<script>
+  window.onload = function() {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+};
+</script>
 
 </html>

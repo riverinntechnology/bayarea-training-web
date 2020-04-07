@@ -6,22 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://www.bayarea-training.com/</loc>
-  <lastmod>2020-04-03T03:36:42+00:00</lastmod>
+  <lastmod>2020-04-04T03:36:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.bayarea-training.com/index.html</loc>
-  <lastmod>2020-04-03T03:36:42+00:00</lastmod>
+  <lastmod>2020-04-04T03:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.bayarea-training.com/faq.html</loc>
-  <lastmod>2020-04-03T03:36:42+00:00</lastmod>
+  <lastmod>2020-04-04T03:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.bayarea-training.com/career.html</loc>
-  <lastmod>2020-04-03T03:36:42+00:00</lastmod>
+  <lastmod>2020-04-04T03:36:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bayarea-training.com/thankyou.html</loc>
+  <lastmod>2020-04-04T03:36:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bayarea-training.com/oops.html</loc>
+  <lastmod>2020-04-04T03:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>
