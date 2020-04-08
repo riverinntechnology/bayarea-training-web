@@ -46,3 +46,12 @@
   -webkit-transition: all 1.0s linear;
   transition: all 1.0s linear;
 }
+
+.tab-heading {
+  color: #94ceca;
+  font-weight: bolder;
+}
+.tab-heading:hover {
+  color: #a6e0dd;
+  text-decoration: none;
+}
