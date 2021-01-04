@@ -77,12 +77,12 @@ body {
   margin-top: 20px;
   margin-bottom: -90px;
 
-}
+} 
 
 .container{
   padding-left: 33px;
   padding-right: 33px;
-}
+} 
 
 .parking-iframe-container {
   height: 480px;
@@ -140,25 +140,25 @@ body {
 }
 
 .top-hiring-button {
-  /* background-color: #ff5050; */
-  /* color: white !important; */
-  /* border-color: #ff5050; */
+  background-color: #ff5050; 
+  color: white !important;
+  border-color: #ff5050;
   font-size: 25px;
-  /* color: white; */
+  color: white; 
   font-weight: normal;
   transition: ease 0.2s all;
   border-radius: 5px;
 }
 
 .top-hiring-button:hover {
-  /* background: #ff6666;
-  border-color: #ff6666; */
+  background: #ff6666;
+  border-color: #ff6666; 
   transition: ease 0.2s all;
 }
 
 .top-hiring-buttonr:not(:disabled):not(.disabled).active, .top-hiring-button:not(:disabled):not(.disabled):active{
-/* background: #ff6666;
-border-color: #ff6666; */
+background: #ff6666;
+border-color: #ff6666; 
 transition: ease 0.2s all;
 }
 
@@ -174,35 +174,8 @@ transition: ease 0.2s all;
   line-height: 2em;
 }
 
-.booking-btn {
-  background-color: transparent;
-  color: white;
-  border-color: white;
-  border-width: 0.1em;
-}
-
-.booking-btn:hover {
-  background-color: white;
-  border-color: white;
-  color: #94ceca;
-  transition: ease 0.2s all;
-}
-
-.booking-btn:focus{
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.booking-btn:not(:disabled):not(.disabled).active, .booking-btn:not(:disabled):not(.disabled):active {
-  background-color: white;
-  border-color: #57a99a;
-  color: #94ceca;
-  transition: ease 0.2s all;
-  outline: 0 !important;
-}
-
 .btn-blue {
-  background-color: #94ceca;
+  background-color: #69b5b0;
   border-color: #94ceca;
   font-size: 21px;
   color: white;
@@ -229,7 +202,18 @@ transition: ease 0.2s all;
   background-color: #57a99a;
   border-color: #57a99a;
   transition: ease 0.2s all;
+} 
+
+
+.booking-btn:not(:disabled):not(.disabled).active, .booking-btn:not(:disabled):not(.disabled):active {
+  background-color: white;
+  border-color: #57a99a;
+  color: #94ceca;
+  transition: ease 0.2s all;
+  outline: 0 !important;
 }
+
+
 
 .jumbotron-heading {
   color: white !important;
