@@ -1,3 +1,16 @@
+.modal-bg-block {
+  position:absolute;
+  top:0;
+  right:0;
+  text-align: right;
+  z-index: -1;
+  width: 15%;
+}
+
+.modal-bg-block img {
+  width: 100%;
+}
+
 .ouibounce-modal {
   font-family: 'Open Sans', sans-serif;
   display: none;
@@ -32,9 +45,11 @@
 }
 
 #ouibounce-desktop .modal2 {
-  width: 1024px;
-  height: 512px;
-  background-image: url("../img/bg.jpg");
+  max-width: 1138px;
+  max-height: 552px;
+  display: block;
+  background-image: url("../img/bg2021_clear.png");
+  background-size: 100% 100%;
 
 }
 
@@ -103,7 +118,7 @@
   width: 100%;
 }
 .ouibounce-modal .modal-footer2 p {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   cursor: pointer;
   display: inline;
   border-bottom: 1px solid #344a5f;
