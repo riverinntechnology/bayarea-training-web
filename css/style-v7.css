@@ -402,10 +402,6 @@ nav {
   transform: rotate(17deg);
 }
 
-.pricing-style {
-  background: black; 
-  color: #C0C0C0;
-}
 
 @media only screen and (max-device-width: 480px) {
   .announcement {
