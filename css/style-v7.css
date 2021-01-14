@@ -264,7 +264,7 @@ nav {
 }
 
 .card-header-bg {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 .btn:focus,
@@ -391,12 +391,14 @@ nav {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1), 0 3px 25px 0 rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
+
 .most_popular {
   position: absolute;
   right: -24px;
   top: -24px;
- 
+
 }
+
 .most_popular img {
   width: 70px;
   transform: rotate(17deg);
@@ -437,7 +439,7 @@ nav {
     left: 47.6%;
     margin-bottom: -35px;
   }
-  
+
   .webapp-promoting-bottom {
     height: 80px !important;
     width: 80px !important;
@@ -452,10 +454,17 @@ nav {
     position: absolute;
     right: -24px;
     top: -24px;
-   
+
   }
+
   .most_popular img {
     width: 50px;
     transform: rotate(17deg);
+  }
+
+  .pricing-mobile-padding {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
   }
 }
