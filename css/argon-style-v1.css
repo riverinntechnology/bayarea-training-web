@@ -1,9 +1,171 @@
+.tinted-image {
+  background: linear-gradient(rgba(245, 54, 92, 0.8), rgba(245, 96, 54, 0.8)),
+    url(/img/beijing.jpg);
+}
 
-  .tinted-image {
-    background: 
-      linear-gradient(
-        rgba(245, 54, 92, 0.8), 
-        rgba(245, 96, 54, 0.8)
-      ),
-      url(/img/beijing.jpg);
+.navbar {
+  border: 0;
+  font-size: 14px;
+  transition: all 0.4s;
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 0 6px 10px -4px rgb(0 0 0 / 15%);
+}
+
+.navbar-transparent {
+  padding-top: 25px;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  margin: 5px 0px;
+  padding: 20px 15px;
+  font-size: 14px;
+  color: #66615b;
+  text-transform: uppercase;
+}
+
+.navbar .btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 50ms linear;
+  border-width: 2px;
+}
+
+.navbar .btn {
+  margin: 15px 3px;
+  font-size: 12px;
+}
+
+.btn-round {
+  border-radius: 30px;
+}
+
+.nav-item .nav-link {
+  line-height: 1.6;
+  margin: 15px 0px;
+  padding: 10px 15px;
+  /* opacity: 0.8; */
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #66615b;
+}
+
+.navbar-transparent .nav-item .nav-link {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  cursor: pointer;
+}
+
+.navbar-toggler .navbar-toggler-bar {
+  background: #66615b;
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 0 auto;
+
+}
+.navbar-transparent .navbar-toggler .navbar-toggler-bar {
+  background: #fff;
+}
+.navbar-toggler .navbar-toggler-bar.mg {
+  margin-top: 4px;
+}
+
+.navbar-translate {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+@media screen and (max-width: 991px) {
+  .fixed-top .navbar-collapse {
+    background-color: #ff8f5e;
+    float: left;
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 224px;
+    right: 0;
+    z-index: 1032;
+    visibility: visible;
+    /* background-color: #999; */
+    overflow-y: visible;
+    border-top: none;
+    text-align: left;
+    border-left: 1px solid #ccc5b9;
+    padding-right: 0px;
+    padding-left: 40px;
+    padding-top: 15px;
+    transform: translate3d(230px, 0, 0);
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
+
+  .nav-open .navbar-collapse {
+    transform: translate3d(0px, 0, 0);
+    display: block;
+  }
+
+  .navbar-collapse .navbar-nav .nav-item .nav-link {
+    margin: 0px 0px;
+    color: #9a9a9a !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5em;
+    padding: 15px 0;
+  }
+
+  .navbar-collapse::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fffcf5;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(112, 112, 112, 0) 60%,
+      rgba(186, 186, 186, 0.15) 100%
+    );
+    display: block;
+    content: "";
+    z-index: 1;
+  }
+
+  .navbar-collapse ul {
+    position: relative;
+    z-index: 3;
+    height: 95%;
+  }
+
+  .nav-open .navbar-translate {
+    transform: translate3d(-230px, 0, 0);
+  }
+
+  .navbar-translate {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  }
+}

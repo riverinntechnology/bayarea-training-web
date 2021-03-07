@@ -1,564 +1,959 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/argon/styles.8b9e97031458134a0c50.css">
-    <link rel="stylesheet" href="css/argon-style-v1.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/app-argon-v1.js"></script>
+    <script type="text/javascript" src="js/ouibounce.min.js"></script>
+    <link rel="stylesheet" href="css/ouibounce-v1.css" />
+    <link rel="stylesheet" href="css/argon/styles.8b9e97031458134a0c50.css" />
+    <link rel="stylesheet" href="css/argon-style-v1.css" />
     <title>Bay Area Chinese Language School</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-transparent"
+      color-on-scroll="500"
+    >
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand cursor-point"
+            >Bay Area Chinese Language School</a
+          >
+          <button
+            class="navbar-toggler navbar-burger"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar mg"></span>
+            <span class="navbar-toggler-bar mg"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                rel="tooltip"
+                title="Check all our courses"
+                data-placement="bottom"
+                href=""
+              >
+                Courses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                rel="tooltip"
+                title="Pricing list"
+                data-placement="bottom"
+                href=""
+              >
+                Pricing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                rel="tooltip"
+                title="How to contact us"
+                data-placement="bottom"
+                href="#"
+                onclick="jQuery('html, body').animate({
+                    scrollTop: $('#contactus').offset().top
+                  }, 600, function(){ window.location.hash = '#contactus';});"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="wrapper">
-        <div class=" main-content" style="background-color: #172b4d;">
-            <div class=" header py-7 py-lg-8 pt-lg-9 tinted-image">
-                <div class=" container">
-                    <div class=" header-body text-center mb-7">
-                        <div class=" row justify-content-center">
-                            <div class=" col-xl-12 col-lg-12 col-md-12 px-5">
-                                <h1 class="display-1 text-white">The fastest way to learn Chinese </h1>
-                                <h3 class="display-4 text-white">With Native Tutors to have Best Achivements</h3>
-                            </div>
-                        </div>
-                    </div>
+      <div class="main-content" style="background-color: #172b4d">
+        <div class="header py-7 py-lg-8 pt-lg-9 tinted-image">
+          <div class="container">
+            <div class="header-body text-center mb-7">
+              <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 px-5">
+                  <h1 class="display-1 text-white">
+                    The fastest way to learn Chinese
+                  </h1>
+                  <h3 class="display-4 text-white">
+                    With Native Tutors to have Best Achivements
+                  </h3>
                 </div>
-                <div class="separator separator-bottom separator-skew zindex-100"><svg preserveAspectRatio="none"
-                        version="1.1" viewBox="0 0 2560 100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
-                        <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-                    </svg></div>
+              </div>
             </div>
+          </div>
+          <div class="separator separator-bottom separator-skew zindex-100">
+            <svg
+              preserveAspectRatio="none"
+              version="1.1"
+              viewBox="0 0 2560 100"
+              x="0"
+              xmlns="http://www.w3.org/2000/svg"
+              y="0"
+            >
+              <polygon
+                class="fill-default"
+                points="2560 0 2560 100 0 100"
+              ></polygon>
+            </svg>
+          </div>
+        </div>
 
-
-            <div class=" container mt--8 pb-5">
-                <div class=" row justify-content-center">
-                    <div class=" col-lg-12">
-                        <div class=" pricing card-group flex-column flex-md-row mb-3">
-                            <div class=" card card-pricing border-0 text-center mb-4">
-                                <div class=" card-header bg-transparent">
-                                    <h4 class=" text-uppercase ls-1 text-primary py-3 mb-0"> Group Lesson </h4>
-                                </div>
-                                <div class=" card-body px-lg-5">
-                                    <div> <span class=" display-4">$ </span><span class="display-2">22</span>
-                                        <span> per hour</span>
-                                    </div>
-                                    <ul class=" list-unstyled my-4">
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-terminal"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2"> 4 Weeks length </span></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-pen-fancy"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2"> Intro course for age 18+ </span></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-hdd"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2"> Access to our online app </span></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-hdd"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2"> Fun learning environment </span></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <a href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca" class=" btn btn-primary mb-3" target="_blank">Book Lessons</a>
-                                </div>
-                            </div>
+        <div class="container mt--8 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="pricing card-group flex-column flex-md-row mb-3">
+                <div class="card card-pricing border-0 text-center mb-4">
+                  <div class="card-header bg-transparent">
+                    <h4 class="text-uppercase ls-1 text-primary py-3 mb-0">
+                      Group Lesson
+                    </h4>
+                  </div>
+                  <div class="card-body px-lg-5">
+                    <div>
+                      <span class="display-4">$ </span
+                      ><span class="display-2">22</span>
+                      <span> per hour</span>
+                    </div>
+                    <ul class="list-unstyled my-4">
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
                             <div
-                                class=" card card-pricing bg-gradient-success zoom-in shadow-lg rounded border-0 text-center mb-4">
-                                <div class=" card-header bg-transparent">
-                                    <h4 class=" text-uppercase ls-1 text-white py-3 mb-0"> Private Lesson </h4>
-                                </div>
-                                <div class=" card-body px-lg-5">
-                                    <div class="text-white"> <span class=" display-4">$ </span><span
-                                            class="display-2">55</span>
-                                        <span> per hour</span>
-                                    </div>
-                                    <ul class=" list-unstyled my-4">
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-white shadow rounded-circle text-muted">
-                                                        <i class=" fas fa-terminal"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2 text-white"> Private 1-on-1 instruction </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-white shadow rounded-circle text-muted">
-                                                        <i class=" fas fa-pen-fancy"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2 text-white"> Focus on your needs </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-white shadow rounded-circle text-muted">
-                                                        <i class=" fas fa-pen-fancy"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2 text-white"> Interactive environment </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-white shadow rounded-circle text-muted">
-                                                        <i class=" fas fa-pen-fancy"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2 text-white"> Access to our online app </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-white shadow rounded-circle text-muted">
-                                                        <i class=" fas fa-pen-fancy"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2 text-white"> Package discount available </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <a href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca" class=" btn btn-secondary mb-3" target="_blank">Book Lessons</a>
-                                </div>
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-terminal"></i>
                             </div>
-                            <div class=" card card-pricing border-0 text-center mb-4">
-                                <div class=" card-header bg-transparent">
-                                    <h4 class=" text-uppercase ls-1 text-primary py-3 mb-0"> Semi-Private Lesson </h4>
-                                </div>
-                                <div class=" card-body px-lg-5">
-                                    <div> <span class=" display-4">$ </span><span class="display-2">75</span>
-                                        <span> for 2 students</span>
-                                    </div>
-                                    <ul class=" list-unstyled my-4">
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-terminal"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2"> Focus on your needs </span></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-pen-fancy"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2"> Interactive environment </span></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-pen-fancy"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2"> Access to our online app </span></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class=" d-flex align-items-center">
-                                                <div>
-                                                    <div
-                                                        class=" icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white">
-                                                        <i class=" fas fa-hdd"></i>
-                                                    </div>
-                                                </div>
-                                                <div><span class=" pl-2">Package discount available </span></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <a href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca" class=" btn btn-primary mb-3" target="_blank">Book Lessons</a>
-                                </div>
+                          </div>
+                          <div><span class="pl-2"> 4 Weeks length </span></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-pen-fancy"></i>
                             </div>
+                          </div>
+                          <div>
+                            <span class="pl-2"> Intro course for age 18+ </span>
+                          </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class=" row row-grid justify-content-center">
-                    <div class=" col-lg-10">
-                        <div class=" table-responsive">
-                            <table class=" table table-dark mt-5">
-                                <thead>
-                                    <tr>
-                                        <th class=" px-0 bg-transparent" scope="col"><span
-                                                class=" text-light font-weight-700"> Features </span></th>
-                                        <th class=" text-center bg-transparent" scope="col"> Group Lesson </th>
-                                        <th class=" text-center bg-transparent" scope="col"> Private Lesson </th>
-                                        <th class=" text-center bg-transparent" scope="col"> Semi-Private </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class=" px-0">Homework Support</td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class=" px-0">Online learning App Access</td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class=" px-0">Personalized Learning</td>
-                                        <td class=" text-center">-</td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class=" px-0">Rescheduling Flexibility</td>
-                                        <td class=" text-center">-</td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class=" px-0">Package Discount</td>
-                                        <td class=" text-center">-</td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class=" px-0">Test Preparations</td>
-                                        <td class=" text-center">-</td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                        <td class=" text-center"><i class=" fas fa-check text-success"></i></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-hdd"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2"> Access to our online app </span>
+                          </div>
                         </div>
-                    </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-hdd"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2"> Fun learning environment </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a
+                      href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca"
+                      class="btn btn-primary mb-3"
+                      target="_blank"
+                      >Book Lessons</a
+                    >
+                  </div>
                 </div>
+                <div
+                  class="card card-pricing bg-gradient-success zoom-in shadow-lg rounded border-0 text-center mb-4"
+                >
+                  <div class="card-header bg-transparent">
+                    <h4 class="text-uppercase ls-1 text-white py-3 mb-0">
+                      Private Lesson
+                    </h4>
+                  </div>
+                  <div class="card-body px-lg-5">
+                    <div class="text-white">
+                      <span class="display-4">$ </span
+                      ><span class="display-2">55</span>
+                      <span> per hour</span>
+                    </div>
+                    <ul class="list-unstyled my-4">
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-white shadow rounded-circle text-muted"
+                            >
+                              <i class="fas fa-terminal"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2 text-white">
+                              Private 1-on-1 instruction
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-white shadow rounded-circle text-muted"
+                            >
+                              <i class="fas fa-pen-fancy"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2 text-white">
+                              Focus on your needs
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-white shadow rounded-circle text-muted"
+                            >
+                              <i class="fas fa-pen-fancy"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2 text-white">
+                              Interactive environment
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-white shadow rounded-circle text-muted"
+                            >
+                              <i class="fas fa-pen-fancy"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2 text-white">
+                              Access to our online app
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-white shadow rounded-circle text-muted"
+                            >
+                              <i class="fas fa-pen-fancy"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2 text-white">
+                              Package discount available
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a
+                      href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca"
+                      class="btn btn-secondary mb-3"
+                      target="_blank"
+                      >Book Lessons</a
+                    >
+                  </div>
+                </div>
+                <div class="card card-pricing border-0 text-center mb-4">
+                  <div class="card-header bg-transparent">
+                    <h4 class="text-uppercase ls-1 text-primary py-3 mb-0">
+                      Semi-Private Lesson
+                    </h4>
+                  </div>
+                  <div class="card-body px-lg-5">
+                    <div>
+                      <span class="display-4">$ </span
+                      ><span class="display-2">75</span>
+                      <span> for 2 students</span>
+                    </div>
+                    <ul class="list-unstyled my-4">
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-terminal"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2"> Focus on your needs </span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-pen-fancy"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2"> Interactive environment </span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-pen-fancy"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2"> Access to our online app </span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <div
+                              class="icon icon-xs icon-shape bg-gradient-primary shadow rounded-circle text-white"
+                            >
+                              <i class="fas fa-hdd"></i>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="pl-2"
+                              >Package discount available
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a
+                      href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca"
+                      class="btn btn-primary mb-3"
+                      target="_blank"
+                      >Book Lessons</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="row row-grid justify-content-center">
+            <div class="col-lg-10">
+              <div class="table-responsive">
+                <table class="table table-dark mt-5">
+                  <thead>
+                    <tr>
+                      <th class="px-0 bg-transparent" scope="col">
+                        <span class="text-light font-weight-700">
+                          Features
+                        </span>
+                      </th>
+                      <th class="text-center bg-transparent" scope="col">
+                        Group Lesson
+                      </th>
+                      <th class="text-center bg-transparent" scope="col">
+                        Private Lesson
+                      </th>
+                      <th class="text-center bg-transparent" scope="col">
+                        Semi-Private
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="px-0">Homework Support</td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-0">Online learning App Access</td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-0">Personalized Learning</td>
+                      <td class="text-center">-</td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-0">Rescheduling Flexibility</td>
+                      <td class="text-center">-</td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-0">Package Discount</td>
+                      <td class="text-center">-</td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-0">Test Preparations</td>
+                      <td class="text-center">-</td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="fas fa-check text-success"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <section _ngcontent-qsc-c1="" class="py-7 section-nucleo-icons bg-white overflow-hidden">
-            <div _ngcontent-qsc-c1="" class="container">
-                <div _ngcontent-qsc-c1="" class="row justify-content-center">
-                    <div _ngcontent-qsc-c1="" class="col-lg-8 text-center">
-                        <h2 _ngcontent-qsc-c1="" class="display-5">We recently launched our free new companion web
-                            application.</h2>
-                        <p _ngcontent-qsc-c1="" class="lead"> This fully interactive platform boosts student motivation,
-                            efficiency
-                            and excitement about learning while studying Chinese. </p>
-                        <div _ngcontent-qsc-c1="" class="btn-wrapper">
-                            <a _ngcontent-qsc-c1="" class="btn btn-primary" target="_blank" href="https://bacls-learning.herokuapp.com/welcome">Sign in</a>
-                            <a _ngcontent-qsc-c1="" class="btn btn-default" href="https://bacls-learning.herokuapp.com/welcome" target="_blank">Sign
-                                up</a>
-                        </div>
-                    </div>
-                </div>
-                <div _ngcontent-qsc-c1="" class="blur--hover"><a _ngcontent-qsc-c1="" href="">
-                        <div _ngcontent-qsc-c1="" class="icons-container blur-item mt-5">
-                            <img src="/img/online-app.gif" alt="" class="img-fluid" style="height: auto; max-width: 100%;">
-                            </div>
-                    </a></div>
+      <section
+        _ngcontent-qsc-c1=""
+        class="py-7 section-nucleo-icons bg-white overflow-hidden"
+      >
+        <div _ngcontent-qsc-c1="" class="container">
+          <div _ngcontent-qsc-c1="" class="row justify-content-center">
+            <div _ngcontent-qsc-c1="" class="col-lg-8 text-center">
+              <h2 _ngcontent-qsc-c1="" class="display-5">
+                We recently launched our free new companion web application.
+              </h2>
+              <p _ngcontent-qsc-c1="" class="lead">
+                This fully interactive platform boosts student motivation,
+                efficiency and excitement about learning while studying Chinese.
+              </p>
+              <div _ngcontent-qsc-c1="" class="btn-wrapper">
+                <a
+                  _ngcontent-qsc-c1=""
+                  class="btn btn-primary"
+                  target="_blank"
+                  href="https://bacls-learning.herokuapp.com/welcome"
+                  >Sign in</a
+                >
+                <a
+                  _ngcontent-qsc-c1=""
+                  class="btn btn-default"
+                  href="https://bacls-learning.herokuapp.com/welcome"
+                  target="_blank"
+                  >Sign up</a
+                >
+              </div>
             </div>
-        </section>
-
-        <section _ngcontent-qsc-c1="" class="py-6">
-            <div _ngcontent-qsc-c1="" class="container">
-                <div _ngcontent-qsc-c1="" class="row row-grid align-items-center">
-                    <div _ngcontent-qsc-c1="" class="col-md-6 order-md-2"><img _ngcontent-qsc-c1="" class="img-fluid"
-                            src="/img/three-students.jpg"></div>
-                    <div _ngcontent-qsc-c1="" class="col-md-6 order-md-1">
-                        <div _ngcontent-qsc-c1="" class="pr-md-5">
-                            <h1 _ngcontent-qsc-c1="">Lesson for Adult</h1>
-                            <p style="font-size: 18px;">
-                                Private 1-on-1 lessons are the quickest and most cost-effective way to improve your
-                                Chinese skills. We personalize your lessons according to your needs and levels.
-                            </p>
-                            <p style="font-size: 18px;">
-                                We teach every level, from beginner through advanced. Whether you would learn
-                                immersively or only learn how to speak without learning Chinese characters,
-                                we will tailor the content for you in order to help you meet your expectations faster.
-                            </p>
-                            
-                            <ul _ngcontent-qsc-c1="" class="list-unstyled mt-5">
-                                <p class="lead">Our private lessons are designed for</p>
-                                <li _ngcontent-qsc-c1="" class="py-2">
-                                    <div _ngcontent-qsc-c1="" class="d-flex align-items-center">
-                                        <div _ngcontent-qsc-c1="">
-                                            <div _ngcontent-qsc-c1="" class="badge badge-circle badge-success mr-3">
-                                                <i class="fa fa-check" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                        <div _ngcontent-qsc-c1="">
-                                            <h4 _ngcontent-qsc-c1="" class="mb-0">If your company sends you to China constantly</h4>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li _ngcontent-qsc-c1="" class="py-2">
-                                    <div _ngcontent-qsc-c1="" class="d-flex align-items-center">
-                                        <div _ngcontent-qsc-c1="">
-                                            <div _ngcontent-qsc-c1="" class="badge badge-circle badge-success mr-3">
-                                                <i class="fa fa-check" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                        <div _ngcontent-qsc-c1="">
-                                            <h4 _ngcontent-qsc-c1="" class="mb-0">If you are surrounding by Chinese co-workers</h4>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li _ngcontent-qsc-c1="" class="py-2">
-                                    <div _ngcontent-qsc-c1="" class="d-flex align-items-center">
-                                        <div _ngcontent-qsc-c1="">
-                                            <div _ngcontent-qsc-c1="" class="badge badge-circle badge-success mr-3">
-                                                <i class="fa fa-check" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                        <div _ngcontent-qsc-c1="">
-                                            <h4 _ngcontent-qsc-c1="" class="mb-0">If you chose Chinese as a Second Language at School</h4>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a _ngcontent-qsc-c1="" class="font-weight-bold mt-5 btn btn-primary"
-                                href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca" target="_blank">Book Lessons</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section _ngcontent-qsc-c1="" class="py-6">
-            <div _ngcontent-qsc-c1="" class="container">
-                <div _ngcontent-qsc-c1="" class="row row-grid align-items-center">
-                    <div _ngcontent-qsc-c1="" class="col-md-6">
-                        <img _ngcontent-qsc-c1="" class="img-fluid"
-                            src="/img/BALSchool.jpg"></div>
-                    <div _ngcontent-qsc-c1="" class="col-md-6">
-                        <div _ngcontent-qsc-c1="" class="pr-md-5">
-                            <h1 _ngcontent-qsc-c1="">Lesson for Children & Teenagers</h1>
-                            <p style="font-size: 18px;">
-                                Children are like sponges for new
-                                languages! They pick up on new languages much faster than adults,
-                                so we suggest our program to all children from age 7.
-                            </p>
-                            <p style="font-size: 18px;">
-                                If you are a student looking to pick up a second language, Chinese might be
-                                a goood option for you, as it is one of the most spoken languages in the world of
-                                economics.
-                            </p>
-                            <a _ngcontent-qsc-c1="" class="font-weight-bold mt-5 btn btn-primary"
-                                href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca" target="_blank">Book Lessons</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <div class="section" style="background-color: #172b4d;">
-            <div class="contactus-1">
-                <div class="container" style="padding-top: 40px;">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 d-flex justify-content-center flex-column">
-                            <h2 class="title text-white">Get in Touch</h2>
-                            <h4 class="description text-white">Feel free to contact us if you have any questions.</h4>
-                            <br>
-                            <div class="info info-horizontal">
-                                <div class="icon icon-shape icon-shape-white shadow rounded-circle text-white">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="description">
-                                    <h4 class="info-title text-white">Find us at the office</h4>
-                                    <p class="description ml-3 text-white"> 1202 Kifer Rd,<br>
-                                        94086 Sunnyvale,<br>
-                                        CA, USA
-                                    </p>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="info info-horizontal">
-                                <div class="icon icon-shape icon-shape-white shadow rounded-circle text-white">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                                <div class="description">
-                                    <h4 class="info-title text-white">Give us a ring</h4>
-                                    <p class="description ml-3 text-white"> Bay Area Chinese Language School<br>
-                                        +1 (415) 583-9917<br>
-                                        Mon - Fri, 12pm-7:30pm<br>
-                                        Sat - Sun, 2pm-7pm
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-7 ml-auto mr-auto">
-                            <div class="card card-contact card-raised" style="margin-top: 30px;">
-                                <form role="form" id="contact-form" method="post">
-                                    <div class="card-header text-center">
-                                        <h4 class="card-title">Contact Us</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>First name</label>
-                                                    <div class="input-group mb-4">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text"><i
-                                                                    class="ni ni-circle-08"></i></span>
-                                                        </div>
-                                                        <input class="form-control" placeholder="First Name..."
-                                                            aria-label="First Name..." type="text"
-                                                            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: pointer;">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 pl-2">
-                                                <div class="form-group">
-                                                    <label>Last name</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text"><i
-                                                                    class="ni ni-collection"></i></span>
-                                                        </div>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Last Name..." aria-label="Last Name...">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Phone Number</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                                </div>
-                                                <input type="text" class="form-control" placeholder="Phone Number">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Email address</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                                </div>
-                                                <input type="text" class="form-control" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Your message</label>
-                                            <textarea name="message" class="form-control" id="message"
-                                                rows="6"></textarea>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="custom-control custom-checkbox mt-2">
-                                                    <input class="custom-control-input" id="customCheck"
-                                                        type="checkbox">
-                                                    <label class="custom-control-label" for="customCheck">
-                                                        <span>I'm not a robot</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <button type="submit" class="btn btn-primary btn-round pull-right">Send
-                                                    Message</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contactus-1 bg-default" style="background: url('./assets/img/bg-opa_5.png')">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="row iframe-container parking-iframe-container">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1gvcXqkuiu3TbgS6xMUGiX5RocUAEXYa6"
-                                width="100%" height="480"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div _ngcontent-qsc-c1="" class="blur--hover">
+            <a _ngcontent-qsc-c1="" href="">
+              <div _ngcontent-qsc-c1="" class="icons-container blur-item mt-5">
+                <img
+                  src="/img/online-app.gif"
+                  alt=""
+                  class="img-fluid"
+                  style="height: auto; max-width: 100%"
+                />
+              </div>
+            </a>
+          </div>
         </div>
-        <br>
+      </section>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="row row-grid align-items-center my-md">
-                    <div class="col-lg-6">
-                        <h3 class="text-info font-weight-light mb-2">Thank you for supporting us!</h3>
-                        <h4 class="mb-0 font-weight-light">We are happy to help.</h4>
-                    </div>
-                    <div class="col-lg-6 text-lg-center btn-wrapper">
-                        <a href="https://www.google.com/search?q=bay+area+Chinese+Language+school+google+review&oq=bay+area+Chinese+Language+school+google+review&aqs=chrome..69i57j33i160.13321j0j1&sourceid=chrome&ie=UTF-8#lrd=0x808fb7d2a37679cb:0xc3028705cd8f8d1f,1,,,"
-                            class=" btn btn-google-plus btn-icon" rel="tooltip" title="Share!" target="_blank">
-                            <i class="fab fa-google-plus-g"></i> Google
-                        </a>
-                        <a href="http://yelp.com/biz/bay-area-chinese-language-school-santa-clara" target="_blank"
-                            class=" btn btn-youtube btn-icon" rel="tooltip" title="Share!">
-                            <i class="fab fa-yelp "></i> Yelp
-                        </a>
-                    </div>
-                </div>
-                <hr>
-                <div class="row align-items-center justify-content-md-between">
-                    <div class="col-md-6">
-                        <div class="copyright">
-                            © 2021 <a href="" class="text-info">Bay Area Chinese Language School</a>
-                        </div>
-                    </div>
-                </div>
+      <section _ngcontent-qsc-c1="" class="py-6">
+        <div _ngcontent-qsc-c1="" class="container">
+          <div _ngcontent-qsc-c1="" class="row row-grid align-items-center">
+            <div _ngcontent-qsc-c1="" class="col-md-6 order-md-2">
+              <img
+                _ngcontent-qsc-c1=""
+                class="img-fluid"
+                src="/img/three-students.jpg"
+              />
             </div>
-        </footer>
+            <div _ngcontent-qsc-c1="" class="col-md-6 order-md-1">
+              <div _ngcontent-qsc-c1="" class="pr-md-5">
+                <h1 _ngcontent-qsc-c1="">Lesson for Adult</h1>
+                <p style="font-size: 18px">
+                  Private 1-on-1 lessons are the quickest and most
+                  cost-effective way to improve your Chinese skills. We
+                  personalize your lessons according to your needs and levels.
+                </p>
+                <p style="font-size: 18px">
+                  We teach every level, from beginner through advanced. Whether
+                  you would learn immersively or only learn how to speak without
+                  learning Chinese characters, we will tailor the content for
+                  you in order to help you meet your expectations faster.
+                </p>
+
+                <ul _ngcontent-qsc-c1="" class="list-unstyled mt-5">
+                  <p class="lead">Our private lessons are designed for</p>
+                  <li _ngcontent-qsc-c1="" class="py-2">
+                    <div _ngcontent-qsc-c1="" class="d-flex align-items-center">
+                      <div _ngcontent-qsc-c1="">
+                        <div
+                          _ngcontent-qsc-c1=""
+                          class="badge badge-circle badge-success mr-3"
+                        >
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div _ngcontent-qsc-c1="">
+                        <h4 _ngcontent-qsc-c1="" class="mb-0">
+                          If your company sends you to China constantly
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li _ngcontent-qsc-c1="" class="py-2">
+                    <div _ngcontent-qsc-c1="" class="d-flex align-items-center">
+                      <div _ngcontent-qsc-c1="">
+                        <div
+                          _ngcontent-qsc-c1=""
+                          class="badge badge-circle badge-success mr-3"
+                        >
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div _ngcontent-qsc-c1="">
+                        <h4 _ngcontent-qsc-c1="" class="mb-0">
+                          If you are surrounding by Chinese co-workers
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li _ngcontent-qsc-c1="" class="py-2">
+                    <div _ngcontent-qsc-c1="" class="d-flex align-items-center">
+                      <div _ngcontent-qsc-c1="">
+                        <div
+                          _ngcontent-qsc-c1=""
+                          class="badge badge-circle badge-success mr-3"
+                        >
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div _ngcontent-qsc-c1="">
+                        <h4 _ngcontent-qsc-c1="" class="mb-0">
+                          If you chose Chinese as a Second Language at School
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a
+                _ngcontent-qsc-c1=""
+                class="font-weight-bold mt-5 btn btn-primary"
+                href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca"
+                target="_blank"
+                >Book Lessons</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section _ngcontent-qsc-c1="" class="py-6">
+        <div _ngcontent-qsc-c1="" class="container">
+          <div _ngcontent-qsc-c1="" class="row row-grid align-items-center">
+            <div _ngcontent-qsc-c1="" class="col-md-6">
+              <img
+                _ngcontent-qsc-c1=""
+                class="img-fluid"
+                src="/img/BALSchool.jpg"
+              />
+            </div>
+            <div _ngcontent-qsc-c1="" class="col-md-6">
+              <div _ngcontent-qsc-c1="" class="pr-md-5">
+                <h1 _ngcontent-qsc-c1="">Lesson for Children & Teenagers</h1>
+                <p style="font-size: 18px">
+                  Children are like sponges for new languages! They pick up on
+                  new languages much faster than adults, so we suggest our
+                  program to all children from age 7.
+                </p>
+                <p style="font-size: 18px">
+                  If you are a student looking to pick up a second language,
+                  Chinese might be a goood option for you, as it is one of the
+                  most spoken languages in the world of economics.
+                </p>
+                <a
+                  _ngcontent-qsc-c1=""
+                  class="font-weight-bold mt-5 btn btn-primary"
+                  href="https://square.site/book/AAZC07XSRDEMC/bay-area-chinese-language-school-sunnyvale-ca"
+                  target="_blank"
+                  >Book Lessons</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section" style="background-color: #172b4d">
+        <div class="contactus-1" id="contactus">
+          <div class="container" style="padding-top: 40px">
+            <div class="row">
+              <div
+                class="col-lg-5 col-md-5 d-flex justify-content-center flex-column"
+              >
+                <h2 class="title text-white">Get in Touch</h2>
+                <h4 class="description text-white">
+                  Feel free to contact us if you have any questions.
+                </h4>
+                <br />
+                <div class="info info-horizontal">
+                  <div
+                    class="icon icon-shape icon-shape-white shadow rounded-circle text-white"
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title text-white">Find us at the office</h4>
+                    <p class="description ml-3 text-white">
+                      1202 Kifer Rd,<br />
+                      94086 Sunnyvale,<br />
+                      CA, USA
+                    </p>
+                  </div>
+                </div>
+                <br />
+                <div class="info info-horizontal">
+                  <div
+                    class="icon icon-shape icon-shape-white shadow rounded-circle text-white"
+                  >
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title text-white">Give us a ring</h4>
+                    <p class="description ml-3 text-white">
+                      Bay Area Chinese Language School<br />
+                      +1 (415) 583-9917<br />
+                      Mon - Fri, 12pm-7:30pm<br />
+                      Sat - Sun, 2pm-7pm
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-7 ml-auto mr-auto">
+                <div
+                  class="card card-contact card-raised"
+                  style="margin-top: 30px"
+                >
+                  <form role="form" id="contact-form" method="post">
+                    <div class="card-header text-center">
+                      <h4 class="card-title">Contact Us</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>First name</label>
+                            <div class="input-group mb-4">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"
+                                  ><i class="ni ni-circle-08"></i
+                                ></span>
+                              </div>
+                              <input
+                                class="form-control"
+                                placeholder="First Name..."
+                                aria-label="First Name..."
+                                type="text"
+                                style="
+                                  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==');
+                                  background-repeat: no-repeat;
+                                  background-attachment: scroll;
+                                  background-size: 16px 18px;
+                                  background-position: 98% 50%;
+                                  cursor: pointer;
+                                "
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 pl-2">
+                          <div class="form-group">
+                            <label>Last name</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"
+                                  ><i class="ni ni-collection"></i
+                                ></span>
+                              </div>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Last Name..."
+                                aria-label="Last Name..."
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Phone Number</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"
+                              ><i class="ni ni-email-83"></i
+                            ></span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Email address</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"
+                              ><i class="ni ni-email-83"></i
+                            ></span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Your message</label>
+                        <textarea
+                          name="message"
+                          class="form-control"
+                          id="message"
+                          rows="6"
+                        ></textarea>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="custom-control custom-checkbox mt-2">
+                            <input
+                              class="custom-control-input"
+                              id="customCheck"
+                              type="checkbox"
+                            />
+                            <label
+                              class="custom-control-label"
+                              for="customCheck"
+                            >
+                              <span>I'm not a robot</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <button
+                            type="submit"
+                            class="btn btn-primary btn-round pull-right"
+                          >
+                            Send Message
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="contactus-1 bg-default"
+            style="background: url('./assets/img/bg-opa_5.png')"
+          >
+            <div class="col-lg-12 col-md-12">
+              <div class="row iframe-container parking-iframe-container">
+                <iframe
+                  src="https://www.google.com/maps/d/embed?mid=1gvcXqkuiu3TbgS6xMUGiX5RocUAEXYa6"
+                  width="100%"
+                  height="480"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row row-grid align-items-center my-md">
+            <div class="col-lg-6">
+              <h3 class="text-info font-weight-light mb-2">
+                Thank you for supporting us!
+              </h3>
+              <h4 class="mb-0 font-weight-light">We are happy to help.</h4>
+            </div>
+            <div class="col-lg-6 text-lg-center btn-wrapper">
+              <a
+                href="https://www.google.com/search?q=bay+area+Chinese+Language+school+google+review&oq=bay+area+Chinese+Language+school+google+review&aqs=chrome..69i57j33i160.13321j0j1&sourceid=chrome&ie=UTF-8#lrd=0x808fb7d2a37679cb:0xc3028705cd8f8d1f,1,,,"
+                class="btn btn-google-plus btn-icon"
+                rel="tooltip"
+                title="Share!"
+                target="_blank"
+              >
+                <i class="fab fa-google-plus-g"></i> Google
+              </a>
+              <a
+                href="http://yelp.com/biz/bay-area-chinese-language-school-santa-clara"
+                target="_blank"
+                class="btn btn-youtube btn-icon"
+                rel="tooltip"
+                title="Share!"
+              >
+                <i class="fab fa-yelp"></i> Yelp
+              </a>
+            </div>
+          </div>
+          <hr />
+          <div class="row align-items-center justify-content-md-between">
+            <div class="col-md-6">
+              <div class="copyright">
+                © 2021
+                <a href="" class="text-info"
+                  >Bay Area Chinese Language School</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
 
+    <!-- OuiBounce Modal -->
+
+    <div class="ouibounce-modal" id="ouibounce-desktop">
+      <div class="underlay"></div>
+      <div class="modal2">
+        <div class="bg"></div>
+        <div class="modal-title2"></div>
+        <br />
+        <div class="modal-body2">
+          <div class="modal-bg-block">
+            <img src="img/bg2021_blocks.png" alt="" />
+          </div>
+          <div class="text-center modal-message">
+            <h2 class="text-center model-title-hello">NEW YEAR NEW YOU!</h2>
+            <h5 class="ready-take">Get a Language Skill for 2021</h5>
+            <img src="img/gift-b.png" alt="" />
+            <h4>3 HOUR WELCOME PACKAGE AT <strong>$49</strong></h4>
+            <span><strike>Regular Price $55/h</strike></span>
+          </div>
+
+          <br />
+          <div class="form-row text-center">
+            <div class="col-12">
+              <a
+                id="btn-book-promo-desktop"
+                class="btn btn-lg btn-outline-primary"
+                href="https://squareup.com/appointments/book/AAZC07XSRDEMC/bay-area-chinese-language-school-santa-clara-ca"
+                target="_blank"
+                >BOOK NOW</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer2 btn-no-tks-desktop">
+          <p>no thanks</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- promo mobile -->
+
+    <div class="ouibounce-modal" id="ouibounce-mobile">
+      <div class="underlay"></div>
+      <div class="modal2">
+        <div class="bg"></div>
+        <div class="modal-title2"></div>
+        <div class="modal-body2">
+          <div class="text-center">
+            <h5><strong>NEW YEAR NEW YOU!</strong></h5>
+            <h6>3 HOUR WELCOME PACKAGE AT <strong>$49</strong></h6>
+            <h6><strike>Regular Price $55/h</strike></h6>
+          </div>
+          <div class="form-row text-center">
+            <div class="col-12">
+              <a
+                id="btn-book-promo-mobile"
+                class="btn btn-md mt-2 btn-outline-primary"
+                href="https://squareup.com/appointments/book/AAZC07XSRDEMC/bay-area-chinese-language-school-santa-clara-ca"
+                target="_blank"
+                >BOOK NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
