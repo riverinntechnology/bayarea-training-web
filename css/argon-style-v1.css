@@ -94,7 +94,7 @@
   transition: 0.1s;
 }
 
-.footer {
+.thankyou-footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -104,6 +104,14 @@
 
 .thank-you-header {
   height: 400px;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+.footer-desktop {
+  display: block;
 }
 
 @media screen and (max-width: 991px) {
@@ -183,6 +191,18 @@
 
   .thank-you-header {
     height: 220px;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
+
+  .footer-desktop {
+    display: none;
+  }
+
+  .thankyou-footer {
+    padding-bottom: 0;
   }
 
 }
