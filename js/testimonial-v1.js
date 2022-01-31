@@ -7,7 +7,8 @@ $(document).ready(function(){
       pagination:true,
       navigation:false,
       navigationText:["",""],
-      slideSpeed:1500,
-      autoPlay:true
+      slideSpeed:1000,
+      autoPlay:5000,
+      stopOnHover:true
   });
 });

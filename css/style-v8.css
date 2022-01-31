@@ -479,7 +479,7 @@ nav {
   padding: 30px;
 }
 
-.demo{ background: #ffffff; }
+.demo{ background: rgb(242, 242, 242); padding-top: 20px; }
 .testimonial{
     background: #fff;
     padding: 20px;
@@ -490,7 +490,8 @@ nav {
     content: "";
     width: 100%;
     height: 100%;
-    background: #0d8a63;
+    /* background: #0d8a63; */
+    background: darkgray;
     position: absolute;
     top: 4%;
     left: 2%;
@@ -520,6 +521,7 @@ nav {
     right: 0;
     font-size: 45px;
     color: #a8a8a8;
+    background-color: transparent !important;
 }
 .testimonial .pic{
     display: inline-block;
