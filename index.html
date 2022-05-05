@@ -250,9 +250,16 @@
           </div>
         </div>
       </div>
+    </div>
 
-
-
+    <div class="jumbotron text-white jumbotron-image shadow"
+      style="background-image: url(img/bg-1.jpeg); opacity:0.85;">
+      <h4 class="text-center">Free Online Zoom Group Lessons on Sundays!</h4>
+      <p class="lead text-center">Chinese Introduction Beginner Course. Free of charge.</p>
+      <p class="lead text-center">
+        <a id="btn-group-booking" style="border-color: #C0C0C0;" href="" class="btn btn-outline-light"
+          data-toggle="modal" data-target="#exampleModalCenter" target="_blank">I'm interested!</a>
+      </p>
     </div>
 
     <div class="announcement" style="position: relative;">
@@ -799,7 +806,7 @@
       </div>
       <br>
       <div class="modal-body2">
-        <div class="modal-bg-block"><img src="img/bg2021_blocks.png" alt=""></div>
+        <div class="modal-bg-block"><img src="img/bg2022_blocks.png" alt=""></div>
         <div class="text-center modal-message">
           <h2 class="text-center model-title-hello">NEW YEAR NEW YOU!</h2>
           <h5 class="ready-take">Get a Language Skill for 2022</h5>
@@ -864,3 +871,53 @@
 </script>
 
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"> Free Chinese Introduction Course for Beginners </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        40-Minute Session. 4 Online Sessions.
+        <br>
+        <br>
+        In this course you will learn: <br>
+        <ul>
+          <li>Pinyin, Chinese alphabet (1st Sunday of the month)</li>
+          <li>Greetings (2nd Sunday of the month)</li>
+          <li>Self-Introduction (3rd Sunday of the month)</li>
+          <li>Numbers (4th Sunday of the month)</li>
+        </ul>
+        <br>
+        Time: 5:20pm - 6pm <br>
+        Teacher will provide learning materials. Real life conversation based lessons.
+        <br>
+        Click <a target="_blank"
+          href="https://us06web.zoom.us/j/6466958015?pwd=eXVTU3lBbVd0L2FhYkdVb0crSGlhQT09">here</a> to join our Zoom
+        meeting room. <br>
+        Leave us your email if you want to receive an event reminder. We don't collect any personal information for
+        advertising.
+      </div>
+      <div class="modal-body">
+        <form action="https://formbackend2.baclschool.com/api/upload-form/index" method="POST">
+          <input type="hidden" id="form-type" name="page" value="sunday-class">
+          <div class="form-group">
+            <input type="text" class="form-control" id="form-your-email" name="your-email"
+              placeholder="enter email to receive a reminder" required>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LfR_OYUAAAAAM3mTtkBH1MvB6MHyho4ZYPgKXEW"></div>
+          <div class="form-group text-right">
+            <input id="btn-sundayclass-form" type="submit" value="Send" class="btn btn-primary">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
