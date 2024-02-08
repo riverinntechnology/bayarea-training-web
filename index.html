@@ -872,7 +872,7 @@
       <h1 id="register" class="display-4">Contact Us</h1>
     </div>
 
-    <form action="https://formbackend2.baclschool.com/api/upload-form/index" method="POST">
+    <form action="https://formbackendv3.baclschool.com/api/upload-form/index" method="POST">
       <input type="hidden" id="form-type" name="page" value="index.html">
       <div class="form-group">
         <label for="form-your-name">First Name (*)</label>
@@ -913,7 +913,8 @@
       <div class="g-recaptcha" data-sitekey="6LfR_OYUAAAAAM3mTtkBH1MvB6MHyho4ZYPgKXEW"></div>
 
       <div class="text-center">
-        <input id="btn-contact-form" type="submit" value="Send" class="btn btn-lg btn-jumbo-section">
+        <input id="btn-contact-form" type="submit" value="Send" class="btn btn-lg btn-jumbo-section"
+          onclick="return false;">
       </div>
     </form>
 
@@ -1079,6 +1080,8 @@
   };
 </script>
 
+
+
 </html>
 
 <!-- Modal -->
@@ -1114,7 +1117,7 @@
         advertising.
       </div>
       <div class="modal-body">
-        <form action="https://formbackend2.baclschool.com/api/upload-form/index" method="POST">
+        <form action="https://formbackendv3.baclschool.com/api/upload-form/index" method="POST">
           <input type="hidden" id="form-type" name="page" value="sunday-class">
           <div class="form-group">
             <input type="email" class="form-control" id="form-your-email" name="your-email"
